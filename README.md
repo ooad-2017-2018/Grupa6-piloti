@@ -1,5 +1,5 @@
 # Grupa6-piloti
-AERODROM (naslov?)
+AERODROM
 
 1.	Amila Kočanović
 2.	Lejla Kasum
