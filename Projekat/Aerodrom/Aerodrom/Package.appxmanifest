@@ -7,11 +7,11 @@
   IgnorableNamespaces="uap mp">
 
   <Identity
-    Name="d049d593-85a6-4670-9ec9-c243c873dd89"
+    Name="d51d6d61-bb9b-4687-916e-3d5e1f80c376"
     Publisher="CN=Lejla"
     Version="1.0.0.0" />
 
-  <mp:PhoneIdentity PhoneProductId="d049d593-85a6-4670-9ec9-c243c873dd89" PhonePublisherId="00000000-0000-0000-0000-000000000000"/>
+  <mp:PhoneIdentity PhoneProductId="d51d6d61-bb9b-4687-916e-3d5e1f80c376" PhonePublisherId="00000000-0000-0000-0000-000000000000"/>
 
   <Properties>
     <DisplayName>Aerodrom</DisplayName>
