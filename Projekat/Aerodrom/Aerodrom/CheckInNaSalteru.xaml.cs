@@ -26,5 +26,60 @@ namespace Aerodrom
         {
             this.InitializeComponent();
         }
+
+        private void textBlock_SelectionChanged(System.Object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void textBlock1_SelectionChanged(System.Object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void textBlock2_SelectionChanged(System.Object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void radioButton_Checked(System.Object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void radioButton1_Checked(System.Object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void textBlock3_SelectionChanged(System.Object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void textBox1_TextChanged(System.Object sender, TextChangedEventArgs e)
+        {
+
+        }
+
+        private void textBlock4_SelectionChanged(System.Object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void textBlock5_SelectionChanged(System.Object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void button_Click(System.Object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void textBox2_TextChanged(System.Object sender, TextChangedEventArgs e)
+        {
+
+        }
     }
 }
