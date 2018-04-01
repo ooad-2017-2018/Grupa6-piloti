@@ -8,7 +8,21 @@
     mc:Ignorable="d">
 
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
-
+        <TextBlock HorizontalAlignment="Left" Margin="97,86,0,0" TextWrapping="Wrap" Text="Titula" VerticalAlignment="Top"/>
+        <TextBlock HorizontalAlignment="Left" Margin="97,148,0,0" TextWrapping="Wrap" Text="Ime" VerticalAlignment="Top"/>
+        <TextBlock HorizontalAlignment="Left" Margin="97,199,0,0" TextWrapping="Wrap" Text="Prezime" VerticalAlignment="Top" RenderTransformOrigin="0.519,-0.4"/>
+        <TextBlock HorizontalAlignment="Left" Margin="97,351,0,0" TextWrapping="Wrap" Text="Spol" VerticalAlignment="Top"/>
+        <TextBlock HorizontalAlignment="Left" Margin="97,282,0,0" TextWrapping="Wrap" Text="Datum rođenja" VerticalAlignment="Top"/>
+        <ComboBox HorizontalAlignment="Left" Margin="237,86,0,0" VerticalAlignment="Top" Width="161" IsSynchronizedWithCurrentItem="False" IsDropDownOpen="True"/>
+        <TextBox HorizontalAlignment="Left" Margin="237,136,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="162"/>
+        <TextBox HorizontalAlignment="Left" Margin="236,187,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="162"/>
+        <DatePicker HorizontalAlignment="Left" Margin="237,270,0,0" VerticalAlignment="Top"/>
+        <RadioButton Content="Muško" HorizontalAlignment="Left" Margin="237,349,0,0" VerticalAlignment="Top"/>
+        <RadioButton Content="Žensko" HorizontalAlignment="Left" Margin="413,349,0,0" VerticalAlignment="Top"/>
+        <TextBlock HorizontalAlignment="Left" Margin="97,457,0,0" TextWrapping="Wrap" Text="E-mail" VerticalAlignment="Top"/>
+        <TextBlock HorizontalAlignment="Left" Margin="97,506,0,0" TextWrapping="Wrap" Text="Telefon" VerticalAlignment="Top"/>
+        <TextBox HorizontalAlignment="Left" Margin="237,506,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="162"/>
+        <TextBox HorizontalAlignment="Left" Margin="236,457,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="162"/>
     </Grid>
 </Page>
 
