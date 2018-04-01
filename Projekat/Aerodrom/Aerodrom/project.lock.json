@@ -22015,17 +22015,14 @@
   },
   "project": {
     "restore": {
-      "projectUniqueName": "C:\\Users\\Lejla\\Desktop\\Aerodrom\\Aerodrom\\Aerodrom.csproj",
+      "projectUniqueName": "C:\\Users\\Lejla\\Desktop\\Grupa6-piloti\\Projekat\\Aerodrom\\Aerodrom\\Aerodrom.csproj",
       "projectName": "Aerodrom",
-      "projectPath": "C:\\Users\\Lejla\\Desktop\\Aerodrom\\Aerodrom\\Aerodrom.csproj",
-      "projectJsonPath": "C:\\Users\\Lejla\\Desktop\\Aerodrom\\Aerodrom\\project.json",
+      "projectPath": "C:\\Users\\Lejla\\Desktop\\Grupa6-piloti\\Projekat\\Aerodrom\\Aerodrom\\Aerodrom.csproj",
+      "projectJsonPath": "C:\\Users\\Lejla\\Desktop\\Grupa6-piloti\\Projekat\\Aerodrom\\Aerodrom\\project.json",
       "projectStyle": "ProjectJson"
     },
     "dependencies": {
-      "Microsoft.NETCore.UniversalWindowsPlatform": {
-        "target": "Package",
-        "version": "[5.2.3, )"
-      }
+      "Microsoft.NETCore.UniversalWindowsPlatform": "5.2.3"
     },
     "frameworks": {
       "uap10.0": {}
