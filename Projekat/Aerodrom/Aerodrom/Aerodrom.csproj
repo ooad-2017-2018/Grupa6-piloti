@@ -93,11 +93,20 @@
     <None Include="project.json" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AdministratorPanel.xaml.cs">
+      <DependentUpon>AdministratorPanel.xaml</DependentUpon>
+    </Compile>
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
     <Compile Include="CheckInNaSalteru.xaml.cs">
       <DependentUpon>CheckInNaSalteru.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="DodavanjeBrisanjeAviokompanija.xaml.cs">
+      <DependentUpon>DodavanjeBrisanjeAviokompanija.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="DodavanjeBrisanjeUposlenika.xaml.cs">
+      <DependentUpon>DodavanjeBrisanjeUposlenika.xaml</DependentUpon>
     </Compile>
     <Compile Include="MainPage.xaml.cs">
       <DependentUpon>MainPage.xaml</DependentUpon>
@@ -131,7 +140,19 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Page Include="AdministratorPanel.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="CheckInNaSalteru.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="DodavanjeBrisanjeAviokompanija.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="DodavanjeBrisanjeUposlenika.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

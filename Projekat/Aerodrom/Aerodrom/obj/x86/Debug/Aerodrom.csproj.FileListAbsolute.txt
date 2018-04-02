@@ -225,3 +225,13 @@ C:\Users\Lejla\Desktop\Grupa6-piloti\Projekat\Aerodrom\Aerodrom\obj\x86\Debug\Un
 C:\Users\Lejla\Desktop\Grupa6-piloti\Projekat\Aerodrom\Aerodrom\obj\x86\Debug\UnosLicnihPodataka.xaml
 C:\Users\Lejla\Desktop\Grupa6-piloti\Projekat\Aerodrom\Aerodrom\obj\x86\Debug\UnosLicnihPodataka.xbf
 C:\Users\Lejla\Desktop\Grupa6-piloti\Projekat\Aerodrom\Aerodrom\bin\x86\Debug\UnosLicnihPodataka.xbf
+C:\Users\Lejla\Desktop\Grupa6-piloti\Projekat\Aerodrom\Aerodrom\obj\x86\Debug\AdministratorPanel.g.i.cs
+C:\Users\Lejla\Desktop\Grupa6-piloti\Projekat\Aerodrom\Aerodrom\obj\x86\Debug\AdministratorPanel.g.cs
+C:\Users\Lejla\Desktop\Grupa6-piloti\Projekat\Aerodrom\Aerodrom\obj\x86\Debug\AdministratorPanel.xaml
+C:\Users\Lejla\Desktop\Grupa6-piloti\Projekat\Aerodrom\Aerodrom\obj\x86\Debug\AdministratorPanel.xbf
+C:\Users\Lejla\Desktop\Grupa6-piloti\Projekat\Aerodrom\Aerodrom\bin\x86\Debug\AdministratorPanel.xbf
+C:\Users\Lejla\Desktop\Grupa6-piloti\Projekat\Aerodrom\Aerodrom\bin\x86\Debug\DodavanjeBrisanjeUposlenika.xbf
+C:\Users\Lejla\Desktop\Grupa6-piloti\Projekat\Aerodrom\Aerodrom\obj\x86\Debug\DodavanjeBrisanjeUposlenika.g.i.cs
+C:\Users\Lejla\Desktop\Grupa6-piloti\Projekat\Aerodrom\Aerodrom\obj\x86\Debug\DodavanjeBrisanjeUposlenika.g.cs
+C:\Users\Lejla\Desktop\Grupa6-piloti\Projekat\Aerodrom\Aerodrom\obj\x86\Debug\DodavanjeBrisanjeUposlenika.xaml
+C:\Users\Lejla\Desktop\Grupa6-piloti\Projekat\Aerodrom\Aerodrom\obj\x86\Debug\DodavanjeBrisanjeUposlenika.xbf
