@@ -10,9 +10,9 @@
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}" Margin="10,0,0,0">
         <Button Content="Početna" HorizontalAlignment="Left" Margin="10,4,0,0" VerticalAlignment="Top" Height="45" Width="96" Click="Button_Click"/>
         <Button Content="Dodavanje i brisanje uposlenika" HorizontalAlignment="Left" Margin="106,4,0,0" VerticalAlignment="Top" Height="45" Width="305" Click="Button_Click_1"/>
-        <Button Content="Dodavanje i brisanje aviokompanija" HorizontalAlignment="Left" Margin="411,4,0,0" VerticalAlignment="Top" Height="45" Width="337" Click="Button_Click_2"/>
-        <Button Content="Dodavanje linija" HorizontalAlignment="Left" Margin="748,4,0,0" VerticalAlignment="Top" Height="45" Width="166"/>
-        <Button Content="Informacije o aerodromu" HorizontalAlignment="Left" Margin="914,4,0,0" VerticalAlignment="Top" Height="45" Width="244"/>
-        <Button Content="Izlaz" HorizontalAlignment="Left" Margin="1158,4,0,0" VerticalAlignment="Top" Height="45" Width="102" RenderTransformOrigin="-1.927,5.339"/>
+        <Button Content="Dodavanje i brisanje aviokompanija" HorizontalAlignment="Left" Margin="411,4,0,0" VerticalAlignment="Top" Height="45" Width="317" Click="Button_Click_2"/>
+        <Button Content="Dodavanje i brisanje linija" HorizontalAlignment="Left" Margin="728,4,0,0" VerticalAlignment="Top" Height="45" Width="209" Click="Button_Click_3"/>
+        <Button Content="Informacije o aerodromu" HorizontalAlignment="Left" Margin="937,4,0,0" VerticalAlignment="Top" Height="45" Width="221" Click="Button_Click_4"/>
+        <Button Content="Izlaz" HorizontalAlignment="Left" Margin="1158,4,0,0" VerticalAlignment="Top" Height="45" Width="102" RenderTransformOrigin="-1.927,5.339" Click="Button_Click_5"/>
     </Grid>
 </Page>

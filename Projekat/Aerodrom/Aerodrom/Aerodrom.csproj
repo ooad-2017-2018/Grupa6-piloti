@@ -105,8 +105,14 @@
     <Compile Include="DodavanjeBrisanjeAviokompanija.xaml.cs">
       <DependentUpon>DodavanjeBrisanjeAviokompanija.xaml</DependentUpon>
     </Compile>
+    <Compile Include="DodavanjeBrisanjeLinija.xaml.cs">
+      <DependentUpon>DodavanjeBrisanjeLinija.xaml</DependentUpon>
+    </Compile>
     <Compile Include="DodavanjeBrisanjeUposlenika.xaml.cs">
       <DependentUpon>DodavanjeBrisanjeUposlenika.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="InformacijeAerodrom.xaml.cs">
+      <DependentUpon>InformacijeAerodrom.xaml</DependentUpon>
     </Compile>
     <Compile Include="MainPage.xaml.cs">
       <DependentUpon>MainPage.xaml</DependentUpon>
@@ -152,7 +158,15 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="DodavanjeBrisanjeLinija.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="DodavanjeBrisanjeUposlenika.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="InformacijeAerodrom.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

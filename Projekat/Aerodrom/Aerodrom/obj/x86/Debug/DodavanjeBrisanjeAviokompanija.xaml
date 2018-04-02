@@ -25,7 +25,8 @@
         <Button Content="Dodaj / Izmjeni" HorizontalAlignment="Left" Margin="881,445,0,0" VerticalAlignment="Top" Width="153"/>
         <Button Content="Obriši" HorizontalAlignment="Left" Margin="731,445,0,0" VerticalAlignment="Top" Width="115"/>
         <Button Content="Poništi" HorizontalAlignment="Left" Margin="1067,445,0,0" VerticalAlignment="Top" Width="100"/>
-        <Button Content="Nazad na početnu" HorizontalAlignment="Left" Margin="1113,10,0,0" VerticalAlignment="Top" Width="157" Click="Button_Click"/>
+        <Button x:ConnectionId='1' Content="Nazad na početnu" HorizontalAlignment="Left" Margin="1113,10,0,0" VerticalAlignment="Top" Width="157"                     />
 
     </Grid>
 </Page>
+
