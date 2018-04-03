@@ -99,11 +99,23 @@
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
+    <Compile Include="AviokompanijaAnaliza.xaml.cs">
+      <DependentUpon>AviokompanijaAnaliza.xaml</DependentUpon>
+    </Compile>
     <Compile Include="AviokompanijaHome.xaml.cs">
       <DependentUpon>AviokompanijaHome.xaml</DependentUpon>
     </Compile>
     <Compile Include="AviokompanijaLetDetalji.xaml.cs">
       <DependentUpon>AviokompanijaLetDetalji.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="AviokompanijaNoviLet.xaml.cs">
+      <DependentUpon>AviokompanijaNoviLet.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="AviokompanijaZahtjevDetalji.xaml.cs">
+      <DependentUpon>AviokompanijaZahtjevDetalji.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="AviokompanijaZahtjevi.xaml.cs">
+      <DependentUpon>AviokompanijaZahtjevi.xaml</DependentUpon>
     </Compile>
     <Compile Include="CheckInNaSalteru.xaml.cs">
       <DependentUpon>CheckInNaSalteru.xaml</DependentUpon>
@@ -159,11 +171,27 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="AviokompanijaAnaliza.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="AviokompanijaHome.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="AviokompanijaLetDetalji.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="AviokompanijaNoviLet.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="AviokompanijaZahtjevDetalji.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="AviokompanijaZahtjevi.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

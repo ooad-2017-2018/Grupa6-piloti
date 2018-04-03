@@ -11,12 +11,12 @@
         <Button Content="Pocetna
                 " HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Click="Button_Click" Width="248"/>
         <Button Content="Analiza
-                " HorizontalAlignment="Left" Margin="258,10,0,0" VerticalAlignment="Top" Width="281"/>
-        <Button Content="Registracija novog leta" HorizontalAlignment="Left" Margin="539,10,0,0" VerticalAlignment="Top" Width="365"/>
-        <Button Content="Lista zahtjeva" HorizontalAlignment="Left" Margin="904,10,0,0" VerticalAlignment="Top" Width="376"/>
+                " HorizontalAlignment="Left" Margin="258,10,0,0" VerticalAlignment="Top" Width="281" Click="Button_Click_1"/>
+        <Button Content="Registracija novog leta" HorizontalAlignment="Left" Margin="539,10,0,0" VerticalAlignment="Top" Width="365" Click="Button_Click_2"/>
+        <Button Content="Lista zahtjeva" HorizontalAlignment="Left" Margin="904,10,0,0" VerticalAlignment="Top" Width="376" Click="Button_Click_3"/>
         <TextBlock HorizontalAlignment="Left" Margin="28,92,0,0" TextWrapping="Wrap" Text="Dobrodosli /naziv aviokompanije/" VerticalAlignment="Top"/>
         <TextBlock HorizontalAlignment="Left" Margin="28,171,0,0" TextWrapping="Wrap" Text="Vasi registrovani letovi" VerticalAlignment="Top"/>
-        <Button Content="Odaberi" HorizontalAlignment="Left" Margin="763,660,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.346,0.484" Width="99"/>
+        <Button Content="Odaberi" HorizontalAlignment="Left" Margin="763,660,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.346,0.484" Width="99" Click="Button_Click"/>
         <Button Content="Logout" HorizontalAlignment="Left" Margin="1084,660,0,0" VerticalAlignment="Top" Width="90"/>
         <ListBox HorizontalAlignment="Left" Height="378" Margin="28,242,0,0" VerticalAlignment="Top" Width="834">
             <ListBoxItem Content="Let1"/>

@@ -1,5 +1,11 @@
 AdministratorPanel.xbf
 App.xbf
+AviokompanijaAnaliza.xbf
+AviokompanijaHome.xbf
+AviokompanijaLetDetalji.xbf
+AviokompanijaNoviLet.xbf
+AviokompanijaZahtjevDetalji.xbf
+AviokompanijaZahtjevi.xbf
 CheckInNaSalteru.xbf
 DodavanjeBrisanjeAviokompanija.xbf
 DodavanjeBrisanjeLinija.xbf
@@ -8,3 +14,4 @@ InformacijeAerodrom.xbf
 MainPage.xbf
 RezervacijaKarataNaSalteru.xbf
 UnosLicnihPodataka.xbf
+Uprava.xbf
