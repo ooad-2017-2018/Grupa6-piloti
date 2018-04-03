@@ -130,6 +130,9 @@
     <Compile Include="UnosLicnihPodataka.xaml.cs">
       <DependentUpon>UnosLicnihPodataka.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Uprava.xaml.cs">
+      <DependentUpon>Uprava.xaml</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <AppxManifest Include="Package.appxmanifest">
@@ -193,6 +196,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="UnosLicnihPodataka.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Uprava.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

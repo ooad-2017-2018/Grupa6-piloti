@@ -1,0 +1,47 @@
+﻿<Page
+    x:Class="Aerodrom.Uprava"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Aerodrom"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <Pivot Title="Uprava">
+            <PivotItem Header="Analiza">
+                <Grid>
+                    <TextBlock x:Name="textBlock" HorizontalAlignment="Left" Margin="64,63,0,0" TextWrapping="Wrap" Text="Analiziraj sadržaj u periodu od:" VerticalAlignment="Top" Height="22" Width="296" FontSize="20"/>
+                    <TextBlock x:Name="textBlock1" HorizontalAlignment="Left" Margin="64,195,0,0" TextWrapping="Wrap" Text="Do:" VerticalAlignment="Top" FontSize="20"/>
+                    <DatePicker HorizontalAlignment="Left" Margin="64,115,0,0" VerticalAlignment="Top"/>
+                    <DatePicker HorizontalAlignment="Left" Margin="64,267,0,0" VerticalAlignment="Top"/>
+                    <Button x:Name="button" Content="Analiziraj" HorizontalAlignment="Left" Margin="64,395,0,0" VerticalAlignment="Top" Height="44" Width="138" FontSize="20"/>
+                    <TextBlock x:Name="textBlock2" HorizontalAlignment="Left" Margin="730,58,0,0" TextWrapping="Wrap" Text="Analiza sadržaja: " VerticalAlignment="Top" FontSize="20"/>
+                    <TextBlock x:Name="textBlock3" HorizontalAlignment="Left" Margin="730,123,0,0" TextWrapping="Wrap" Text="*Analiza*" VerticalAlignment="Top" Height="342" Width="334" FontSize="20"/>
+                </Grid>
+            </PivotItem>
+            <PivotItem Header="Odgoda leta">
+                <Grid>
+                    <TextBlock x:Name="textBlock41" HorizontalAlignment="Left" Margin="80,53,0,0" TextWrapping="Wrap" Text="Svi trenutni zahtjevi za odgodu leta:" VerticalAlignment="Top" Height="42" Width="330" FontSize="20"/>
+                    <ListBox x:Name="listBox1" HorizontalAlignment="Left" Height="340" Margin="80,135,0,0" VerticalAlignment="Top" Width="330"/>
+                    <TextBlock x:Name="textBlock51" HorizontalAlignment="Left" Margin="658,53,0,0" TextWrapping="Wrap" Text="Detalji zahtjeva:" VerticalAlignment="Top" Height="30" Width="248" FontSize="20"/>
+                    <TextBlock x:Name="textBlock61" HorizontalAlignment="Left" Margin="658,135,0,0" TextWrapping="Wrap" Text="*Detalji odgode*" VerticalAlignment="Top" Height="196" Width="399" FontSize="20"/>
+                    <Button x:Name="button11" Content="Obriši zahtjev" HorizontalAlignment="Left" Margin="658,427,0,0" VerticalAlignment="Top" Height="48" Width="167" FontSize="20"/>
+                    <Button x:Name="button22" Content="Odobri zahtjev" HorizontalAlignment="Left" Margin="890,427,0,0" VerticalAlignment="Top" Height="48" Width="167" FontSize="20"/>
+                </Grid>
+            </PivotItem>
+            <PivotItem Header="Nove linije">
+                <Grid>
+                    <TextBlock x:Name="textBlock4" HorizontalAlignment="Left" Margin="80,53,0,0" TextWrapping="Wrap" Text="Svi trenutni zahtjevi za nove linije:" VerticalAlignment="Top" Height="22" Width="186" FontSize="20"/>
+                    <TextBlock x:Name="textBlock5" HorizontalAlignment="Left" Margin="630,135,0,0" TextWrapping="Wrap" Text="*Detalji*" VerticalAlignment="Top" Height="250" Width="309" FontSize="20"/>
+                    <ListBox x:Name="listBox" HorizontalAlignment="Left" Height="340" Margin="80,135,0,0" VerticalAlignment="Top" Width="330"/>
+                    <Button x:Name="button1" Content="Odobri zahtjev" HorizontalAlignment="Left" Margin="874,419,0,0" VerticalAlignment="Top" Height="44" Width="147"/>
+                    <Button x:Name="button2" Content="Obriši zahtjev" HorizontalAlignment="Left" Margin="630,419,0,0" VerticalAlignment="Top" Height="44" Width="155"/>
+                    <TextBlock x:Name="textBlock7" HorizontalAlignment="Left" Margin="630,53,0,0" TextWrapping="Wrap" Text="Detalji nove linije:" VerticalAlignment="Top" FontSize="20"/>
+
+                </Grid>
+            </PivotItem>
+        </Pivot>
+
+    </Grid>
+</Page>
