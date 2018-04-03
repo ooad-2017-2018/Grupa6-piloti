@@ -1,1 +1,1 @@
-C:\Users\Lejla\Desktop\Grupa6-piloti\Projekat\Aerodrom\Aerodrom\Aerodrom.csproj;x86
+E:\GH\1RI-4.SEMESTAR\OOAD\repozitorij\Grupa6-piloti\Projekat\Aerodrom\Aerodrom\Aerodrom.csproj;x86

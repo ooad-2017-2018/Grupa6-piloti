@@ -99,6 +99,12 @@
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
+    <Compile Include="AviokompanijaHome.xaml.cs">
+      <DependentUpon>AviokompanijaHome.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="AviokompanijaLetDetalji.xaml.cs">
+      <DependentUpon>AviokompanijaLetDetalji.xaml</DependentUpon>
+    </Compile>
     <Compile Include="CheckInNaSalteru.xaml.cs">
       <DependentUpon>CheckInNaSalteru.xaml</DependentUpon>
     </Compile>
@@ -147,6 +153,14 @@
       <SubType>Designer</SubType>
     </ApplicationDefinition>
     <Page Include="AdministratorPanel.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="AviokompanijaHome.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="AviokompanijaLetDetalji.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
