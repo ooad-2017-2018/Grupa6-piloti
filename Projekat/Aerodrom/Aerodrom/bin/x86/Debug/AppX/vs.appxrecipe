@@ -31,13 +31,13 @@
     <AppXManifest Include="C:\Users\Lejla\Desktop\Grupa6-piloti\Projekat\Aerodrom\Aerodrom\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2018-05-11T14:16:00.651</Modified>
+      <Modified>2018-05-12T01:35:01.476</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\Users\Lejla\Desktop\Grupa6-piloti\Projekat\Aerodrom\Aerodrom\bin\x86\Debug\Aerodrom.exe">
       <PackagePath>entrypoint\Aerodrom.exe</PackagePath>
-      <Modified>2018-05-11T14:15:59.936</Modified>
+      <Modified>2018-05-12T01:35:00.071</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Lejla\.nuget\packages\Microsoft.CSharp\4.0.1\lib\netcore50\Microsoft.CSharp.dll">
       <PackagePath>Microsoft.CSharp.dll</PackagePath>
@@ -497,45 +497,45 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Lejla\Desktop\Grupa6-piloti\Projekat\Aerodrom\Aerodrom\Properties\Default.rd.xml">
       <PackagePath>Properties\Default.rd.xml</PackagePath>
-      <Modified>2018-05-11T11:26:58.567</Modified>
+      <Modified>2018-05-12T00:35:40.465</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Lejla\Desktop\Grupa6-piloti\Projekat\Aerodrom\Aerodrom\Assets\LockScreenLogo.scale-200.png">
       <PackagePath>Assets\LockScreenLogo.scale-200.png</PackagePath>
-      <Modified>2018-05-11T11:26:58.549</Modified>
+      <Modified>2018-05-12T00:35:40.439</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Lejla\Desktop\Grupa6-piloti\Projekat\Aerodrom\Aerodrom\Assets\SplashScreen.scale-200.png">
       <PackagePath>Assets\SplashScreen.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2018-05-11T11:26:58.550</Modified>
+      <Modified>2018-05-12T00:35:40.440</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Lejla\Desktop\Grupa6-piloti\Projekat\Aerodrom\Aerodrom\Assets\Square150x150Logo.scale-200.png">
       <PackagePath>Assets\Square150x150Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2018-05-11T11:26:58.551</Modified>
+      <Modified>2018-05-12T00:35:40.441</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Lejla\Desktop\Grupa6-piloti\Projekat\Aerodrom\Aerodrom\Assets\Square44x44Logo.scale-200.png">
       <PackagePath>Assets\Square44x44Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2018-05-11T11:26:58.552</Modified>
+      <Modified>2018-05-12T00:35:40.442</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Lejla\Desktop\Grupa6-piloti\Projekat\Aerodrom\Aerodrom\Assets\Square44x44Logo.targetsize-24_altform-unplated.png">
       <PackagePath>Assets\Square44x44Logo.targetsize-24_altform-unplated.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2018-05-11T11:26:58.553</Modified>
+      <Modified>2018-05-12T00:35:40.442</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Lejla\Desktop\Grupa6-piloti\Projekat\Aerodrom\Aerodrom\Assets\StoreLogo.png">
       <PackagePath>Assets\StoreLogo.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2018-05-11T11:26:58.554</Modified>
+      <Modified>2018-05-12T00:35:40.443</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Lejla\Desktop\Grupa6-piloti\Projekat\Aerodrom\Aerodrom\Assets\Wide310x150Logo.scale-200.png">
       <PackagePath>Assets\Wide310x150Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2018-05-11T11:26:58.555</Modified>
+      <Modified>2018-05-12T00:35:40.444</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Lejla\Desktop\Grupa6-piloti\Projekat\Aerodrom\Aerodrom\bin\x86\Debug\Aerodrom.xr.xml">
       <PackagePath>Aerodrom.xr.xml</PackagePath>
-      <Modified>2018-05-11T11:26:59.197</Modified>
+      <Modified>2018-05-12T00:35:41.040</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\UnionMetadata\Windows.winmd">
       <PackagePath>WinMetadata\Windows.winmd</PackagePath>
@@ -544,11 +544,11 @@
     <AppxPackagedFile Include="C:\Users\Lejla\Desktop\Grupa6-piloti\Projekat\Aerodrom\Aerodrom\bin\x86\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2018-05-11T12:57:29.669</Modified>
+      <Modified>2018-05-12T01:35:01.062</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Lejla\Desktop\Grupa6-piloti\Projekat\Aerodrom\Aerodrom\bin\x86\Debug\Core\Aerodrom.exe">
       <PackagePath>Aerodrom.exe</PackagePath>
-      <Modified>2018-05-11T14:16:00.639</Modified>
+      <Modified>2018-05-12T01:35:01.462</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

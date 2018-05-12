@@ -93,57 +93,72 @@
     <None Include="project.json" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AdministratorPanel.xaml.cs">
+    <Compile Include="Model\Aviokompanija.cs" />
+    <Compile Include="Model\Avion.cs" />
+    <Compile Include="Model\Charter.cs" />
+    <Compile Include="Model\Karta.cs" />
+    <Compile Include="Model\Let.cs" />
+    <Compile Include="Model\LetRedovni.cs" />
+    <Compile Include="Model\Linija.cs" />
+    <Compile Include="Model\Osoba.cs" />
+    <Compile Include="Model\Pista.cs" />
+    <Compile Include="Model\Putnik.cs" />
+    <Compile Include="Model\Rezervacija.cs" />
+    <Compile Include="Model\Uposlenik.cs" />
+    <Compile Include="Model\Zahtjev.cs" />
+    <Compile Include="Model\ZahtjevNovaLinija.cs" />
+    <Compile Include="Model\ZahtjevOdgoda.cs" />
+    <Compile Include="View\AdministratorPanel.xaml.cs">
       <DependentUpon>AdministratorPanel.xaml</DependentUpon>
     </Compile>
     <Compile Include="ViewModel\AerodromViewModel.cs" />
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
-    <Compile Include="AviokompanijaAnaliza.xaml.cs">
+    <Compile Include="View\AviokompanijaAnaliza.xaml.cs">
       <DependentUpon>AviokompanijaAnaliza.xaml</DependentUpon>
     </Compile>
-    <Compile Include="AviokompanijaHome.xaml.cs">
+    <Compile Include="View\AviokompanijaHome.xaml.cs">
       <DependentUpon>AviokompanijaHome.xaml</DependentUpon>
     </Compile>
-    <Compile Include="AviokompanijaLetDetalji.xaml.cs">
+    <Compile Include="View\AviokompanijaLetDetalji.xaml.cs">
       <DependentUpon>AviokompanijaLetDetalji.xaml</DependentUpon>
     </Compile>
-    <Compile Include="AviokompanijaNoviLet.xaml.cs">
+    <Compile Include="View\AviokompanijaNoviLet.xaml.cs">
       <DependentUpon>AviokompanijaNoviLet.xaml</DependentUpon>
     </Compile>
-    <Compile Include="AviokompanijaZahtjevDetalji.xaml.cs">
+    <Compile Include="View\AviokompanijaZahtjevDetalji.xaml.cs">
       <DependentUpon>AviokompanijaZahtjevDetalji.xaml</DependentUpon>
     </Compile>
-    <Compile Include="AviokompanijaZahtjevi.xaml.cs">
+    <Compile Include="View\AviokompanijaZahtjevi.xaml.cs">
       <DependentUpon>AviokompanijaZahtjevi.xaml</DependentUpon>
     </Compile>
-    <Compile Include="CheckInNaSalteru.xaml.cs">
+    <Compile Include="View\CheckInNaSalteru.xaml.cs">
       <DependentUpon>CheckInNaSalteru.xaml</DependentUpon>
     </Compile>
-    <Compile Include="DodavanjeBrisanjeAviokompanija.xaml.cs">
+    <Compile Include="View\DodavanjeBrisanjeAviokompanija.xaml.cs">
       <DependentUpon>DodavanjeBrisanjeAviokompanija.xaml</DependentUpon>
     </Compile>
-    <Compile Include="DodavanjeBrisanjeLinija.xaml.cs">
+    <Compile Include="View\DodavanjeBrisanjeLinija.xaml.cs">
       <DependentUpon>DodavanjeBrisanjeLinija.xaml</DependentUpon>
     </Compile>
-    <Compile Include="DodavanjeBrisanjeUposlenika.xaml.cs">
+    <Compile Include="View\DodavanjeBrisanjeUposlenika.xaml.cs">
       <DependentUpon>DodavanjeBrisanjeUposlenika.xaml</DependentUpon>
     </Compile>
-    <Compile Include="InformacijeAerodrom.xaml.cs">
+    <Compile Include="View\InformacijeAerodrom.xaml.cs">
       <DependentUpon>InformacijeAerodrom.xaml</DependentUpon>
     </Compile>
     <Compile Include="MainPage.xaml.cs">
       <DependentUpon>MainPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="RezervacijaKarataNaSalteru.xaml.cs">
+    <Compile Include="View\RezervacijaKarataNaSalteru.xaml.cs">
       <DependentUpon>RezervacijaKarataNaSalteru.xaml</DependentUpon>
     </Compile>
-    <Compile Include="UnosLicnihPodataka.xaml.cs">
+    <Compile Include="View\UnosLicnihPodataka.xaml.cs">
       <DependentUpon>UnosLicnihPodataka.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Uprava.xaml.cs">
+    <Compile Include="View\Uprava.xaml.cs">
       <DependentUpon>Uprava.xaml</DependentUpon>
     </Compile>
   </ItemGroup>
@@ -168,51 +183,51 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
-    <Page Include="AdministratorPanel.xaml">
+    <Page Include="View\AdministratorPanel.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="AviokompanijaAnaliza.xaml">
+    <Page Include="View\AviokompanijaAnaliza.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="AviokompanijaHome.xaml">
+    <Page Include="View\AviokompanijaHome.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="AviokompanijaLetDetalji.xaml">
+    <Page Include="View\AviokompanijaLetDetalji.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="AviokompanijaNoviLet.xaml">
+    <Page Include="View\AviokompanijaNoviLet.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="AviokompanijaZahtjevDetalji.xaml">
+    <Page Include="View\AviokompanijaZahtjevDetalji.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="AviokompanijaZahtjevi.xaml">
+    <Page Include="View\AviokompanijaZahtjevi.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="CheckInNaSalteru.xaml">
+    <Page Include="View\CheckInNaSalteru.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="DodavanjeBrisanjeAviokompanija.xaml">
+    <Page Include="View\DodavanjeBrisanjeAviokompanija.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="DodavanjeBrisanjeLinija.xaml">
+    <Page Include="View\DodavanjeBrisanjeLinija.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="DodavanjeBrisanjeUposlenika.xaml">
+    <Page Include="View\DodavanjeBrisanjeUposlenika.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="InformacijeAerodrom.xaml">
+    <Page Include="View\InformacijeAerodrom.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -220,15 +235,15 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
-    <Page Include="RezervacijaKarataNaSalteru.xaml">
+    <Page Include="View\RezervacijaKarataNaSalteru.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="UnosLicnihPodataka.xaml">
+    <Page Include="View\UnosLicnihPodataka.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Uprava.xaml">
+    <Page Include="View\Uprava.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
