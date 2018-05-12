@@ -10,22 +10,22 @@
     <PackageArchitecture>x86</PackageArchitecture>
     <PackageIdentityName>d51d6d61-bb9b-4687-916e-3d5e1f80c376</PackageIdentityName>
     <PackageIdentityPublisher>CN=Lejla</PackageIdentityPublisher>
-    <IntermediateOutputPath>C:\Users\Lejla\Documents\Grupa6-piloti\Projekat\Aerodrom\Aerodrom\obj\x86\Debug\</IntermediateOutputPath>
+    <IntermediateOutputPath>C:\Users\Lejla\Desktop\Grupa6-piloti\Projekat\Aerodrom\Aerodrom\obj\x86\Debug\</IntermediateOutputPath>
     <RemoteDeploymentType></RemoteDeploymentType>
     <PackageRegistrationPath></PackageRegistrationPath>
     <RemoveNonLayoutFiles>true</RemoveNonLayoutFiles>
     <DeployOptionalPackages>false</DeployOptionalPackages>
     <WindowsSdkPath>C:\Program Files %28x86%29\Windows Kits\10\</WindowsSdkPath>
-    <LayoutDir>C:\Users\Lejla\Documents\Grupa6-piloti\Projekat\Aerodrom\Aerodrom\bin\x86\Debug\AppX</LayoutDir>
+    <LayoutDir>C:\Users\Lejla\Desktop\Grupa6-piloti\Projekat\Aerodrom\Aerodrom\bin\x86\Debug\AppX</LayoutDir>
   </PropertyGroup>
   <ItemGroup>
-    <AppXManifest Include="C:\Users\Lejla\Documents\Grupa6-piloti\Projekat\Aerodrom\Aerodrom\bin\x86\Debug\Core\AppxManifest.xml">
+    <AppXManifest Include="C:\Users\Lejla\Desktop\Grupa6-piloti\Projekat\Aerodrom\Aerodrom\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
-    <AppxPackagedFile Include="C:\Users\Lejla\Documents\Grupa6-piloti\Projekat\Aerodrom\Aerodrom\bin\x86\Debug\Aerodrom.exe">
+    <AppxPackagedFile Include="C:\Users\Lejla\Desktop\Grupa6-piloti\Projekat\Aerodrom\Aerodrom\bin\x86\Debug\Aerodrom.exe">
       <PackagePath>entrypoint\Aerodrom.exe</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Lejla\.nuget\packages\Microsoft.CSharp\4.0.1\lib\netcore50\Microsoft.CSharp.dll">
@@ -370,47 +370,47 @@
     <AppxPackagedFile Include="C:\Users\Lejla\.nuget\packages\System.Xml.XmlSerializer\4.0.11\lib\netcore50\System.Xml.XmlSerializer.dll">
       <PackagePath>System.Xml.XmlSerializer.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Lejla\Documents\Grupa6-piloti\Projekat\Aerodrom\Aerodrom\Properties\Default.rd.xml">
+    <AppxPackagedFile Include="C:\Users\Lejla\Desktop\Grupa6-piloti\Projekat\Aerodrom\Aerodrom\Properties\Default.rd.xml">
       <PackagePath>Properties\Default.rd.xml</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Lejla\Documents\Grupa6-piloti\Projekat\Aerodrom\Aerodrom\Assets\LockScreenLogo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\Lejla\Desktop\Grupa6-piloti\Projekat\Aerodrom\Aerodrom\Assets\LockScreenLogo.scale-200.png">
       <PackagePath>Assets\LockScreenLogo.scale-200.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Lejla\Documents\Grupa6-piloti\Projekat\Aerodrom\Aerodrom\Assets\SplashScreen.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\Lejla\Desktop\Grupa6-piloti\Projekat\Aerodrom\Aerodrom\Assets\SplashScreen.scale-200.png">
       <PackagePath>Assets\SplashScreen.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Lejla\Documents\Grupa6-piloti\Projekat\Aerodrom\Aerodrom\Assets\Square150x150Logo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\Lejla\Desktop\Grupa6-piloti\Projekat\Aerodrom\Aerodrom\Assets\Square150x150Logo.scale-200.png">
       <PackagePath>Assets\Square150x150Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Lejla\Documents\Grupa6-piloti\Projekat\Aerodrom\Aerodrom\Assets\Square44x44Logo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\Lejla\Desktop\Grupa6-piloti\Projekat\Aerodrom\Aerodrom\Assets\Square44x44Logo.scale-200.png">
       <PackagePath>Assets\Square44x44Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Lejla\Documents\Grupa6-piloti\Projekat\Aerodrom\Aerodrom\Assets\Square44x44Logo.targetsize-24_altform-unplated.png">
+    <AppxPackagedFile Include="C:\Users\Lejla\Desktop\Grupa6-piloti\Projekat\Aerodrom\Aerodrom\Assets\Square44x44Logo.targetsize-24_altform-unplated.png">
       <PackagePath>Assets\Square44x44Logo.targetsize-24_altform-unplated.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Lejla\Documents\Grupa6-piloti\Projekat\Aerodrom\Aerodrom\Assets\StoreLogo.png">
+    <AppxPackagedFile Include="C:\Users\Lejla\Desktop\Grupa6-piloti\Projekat\Aerodrom\Aerodrom\Assets\StoreLogo.png">
       <PackagePath>Assets\StoreLogo.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Lejla\Documents\Grupa6-piloti\Projekat\Aerodrom\Aerodrom\Assets\Wide310x150Logo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\Lejla\Desktop\Grupa6-piloti\Projekat\Aerodrom\Aerodrom\Assets\Wide310x150Logo.scale-200.png">
       <PackagePath>Assets\Wide310x150Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Lejla\Documents\Grupa6-piloti\Projekat\Aerodrom\Aerodrom\bin\x86\Debug\Aerodrom.xr.xml">
+    <AppxPackagedFile Include="C:\Users\Lejla\Desktop\Grupa6-piloti\Projekat\Aerodrom\Aerodrom\bin\x86\Debug\Aerodrom.xr.xml">
       <PackagePath>Aerodrom.xr.xml</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\UnionMetadata\Windows.winmd">
       <PackagePath>WinMetadata\Windows.winmd</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Lejla\Documents\Grupa6-piloti\Projekat\Aerodrom\Aerodrom\bin\x86\Debug\resources.pri">
+    <AppxPackagedFile Include="C:\Users\Lejla\Desktop\Grupa6-piloti\Projekat\Aerodrom\Aerodrom\bin\x86\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Lejla\Documents\Grupa6-piloti\Projekat\Aerodrom\Aerodrom\bin\x86\Debug\Core\Aerodrom.exe">
+    <AppxPackagedFile Include="C:\Users\Lejla\Desktop\Grupa6-piloti\Projekat\Aerodrom\Aerodrom\bin\x86\Debug\Core\Aerodrom.exe">
       <PackagePath>Aerodrom.exe</PackagePath>
     </AppxPackagedFile>
   </ItemGroup>
