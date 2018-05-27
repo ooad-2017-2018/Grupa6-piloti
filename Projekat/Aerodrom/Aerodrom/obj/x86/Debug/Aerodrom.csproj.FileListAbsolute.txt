@@ -794,10 +794,6 @@ C:\Users\Lejla\Desktop\Grupa6-piloti\Projekat\Aerodrom\Aerodrom\bin\x86\Debug\Vi
 C:\Users\Lejla\Desktop\Grupa6-piloti\Projekat\Aerodrom\Aerodrom\bin\x86\Debug\View\AviokompanijaZahtjevDetalji.xbf
 C:\Users\Lejla\Desktop\Grupa6-piloti\Projekat\Aerodrom\Aerodrom\bin\x86\Debug\View\AviokompanijaZahtjevi.xbf
 C:\Users\Lejla\Desktop\Grupa6-piloti\Projekat\Aerodrom\Aerodrom\bin\x86\Debug\View\CheckInNaSalteru.xbf
-C:\Users\Lejla\Desktop\Grupa6-piloti\Projekat\Aerodrom\Aerodrom\bin\x86\Debug\View\DodavanjeBrisanjeAviokompanija.xbf
-C:\Users\Lejla\Desktop\Grupa6-piloti\Projekat\Aerodrom\Aerodrom\bin\x86\Debug\View\DodavanjeBrisanjeLinija.xbf
-C:\Users\Lejla\Desktop\Grupa6-piloti\Projekat\Aerodrom\Aerodrom\bin\x86\Debug\View\DodavanjeBrisanjeUposlenika.xbf
-C:\Users\Lejla\Desktop\Grupa6-piloti\Projekat\Aerodrom\Aerodrom\bin\x86\Debug\View\InformacijeAerodrom.xbf
 C:\Users\Lejla\Desktop\Grupa6-piloti\Projekat\Aerodrom\Aerodrom\bin\x86\Debug\View\RezervacijaKarataNaSalteru.xbf
 C:\Users\Lejla\Desktop\Grupa6-piloti\Projekat\Aerodrom\Aerodrom\bin\x86\Debug\View\UnosLicnihPodataka.xbf
 C:\Users\Lejla\Desktop\Grupa6-piloti\Projekat\Aerodrom\Aerodrom\bin\x86\Debug\View\Uprava.xbf
@@ -817,14 +813,6 @@ C:\Users\Lejla\Desktop\Grupa6-piloti\Projekat\Aerodrom\Aerodrom\obj\x86\Debug\Vi
 C:\Users\Lejla\Desktop\Grupa6-piloti\Projekat\Aerodrom\Aerodrom\obj\x86\Debug\View\AviokompanijaZahtjevi.g.cs
 C:\Users\Lejla\Desktop\Grupa6-piloti\Projekat\Aerodrom\Aerodrom\obj\x86\Debug\View\CheckInNaSalteru.g.i.cs
 C:\Users\Lejla\Desktop\Grupa6-piloti\Projekat\Aerodrom\Aerodrom\obj\x86\Debug\View\CheckInNaSalteru.g.cs
-C:\Users\Lejla\Desktop\Grupa6-piloti\Projekat\Aerodrom\Aerodrom\obj\x86\Debug\View\DodavanjeBrisanjeAviokompanija.g.i.cs
-C:\Users\Lejla\Desktop\Grupa6-piloti\Projekat\Aerodrom\Aerodrom\obj\x86\Debug\View\DodavanjeBrisanjeAviokompanija.g.cs
-C:\Users\Lejla\Desktop\Grupa6-piloti\Projekat\Aerodrom\Aerodrom\obj\x86\Debug\View\DodavanjeBrisanjeLinija.g.i.cs
-C:\Users\Lejla\Desktop\Grupa6-piloti\Projekat\Aerodrom\Aerodrom\obj\x86\Debug\View\DodavanjeBrisanjeLinija.g.cs
-C:\Users\Lejla\Desktop\Grupa6-piloti\Projekat\Aerodrom\Aerodrom\obj\x86\Debug\View\DodavanjeBrisanjeUposlenika.g.i.cs
-C:\Users\Lejla\Desktop\Grupa6-piloti\Projekat\Aerodrom\Aerodrom\obj\x86\Debug\View\DodavanjeBrisanjeUposlenika.g.cs
-C:\Users\Lejla\Desktop\Grupa6-piloti\Projekat\Aerodrom\Aerodrom\obj\x86\Debug\View\InformacijeAerodrom.g.i.cs
-C:\Users\Lejla\Desktop\Grupa6-piloti\Projekat\Aerodrom\Aerodrom\obj\x86\Debug\View\InformacijeAerodrom.g.cs
 C:\Users\Lejla\Desktop\Grupa6-piloti\Projekat\Aerodrom\Aerodrom\obj\x86\Debug\View\RezervacijaKarataNaSalteru.g.i.cs
 C:\Users\Lejla\Desktop\Grupa6-piloti\Projekat\Aerodrom\Aerodrom\obj\x86\Debug\View\RezervacijaKarataNaSalteru.g.cs
 C:\Users\Lejla\Desktop\Grupa6-piloti\Projekat\Aerodrom\Aerodrom\obj\x86\Debug\View\UnosLicnihPodataka.g.i.cs
@@ -839,10 +827,6 @@ C:\Users\Lejla\Desktop\Grupa6-piloti\Projekat\Aerodrom\Aerodrom\obj\x86\Debug\Vi
 C:\Users\Lejla\Desktop\Grupa6-piloti\Projekat\Aerodrom\Aerodrom\obj\x86\Debug\View\AviokompanijaZahtjevDetalji.xaml
 C:\Users\Lejla\Desktop\Grupa6-piloti\Projekat\Aerodrom\Aerodrom\obj\x86\Debug\View\AviokompanijaZahtjevi.xaml
 C:\Users\Lejla\Desktop\Grupa6-piloti\Projekat\Aerodrom\Aerodrom\obj\x86\Debug\View\CheckInNaSalteru.xaml
-C:\Users\Lejla\Desktop\Grupa6-piloti\Projekat\Aerodrom\Aerodrom\obj\x86\Debug\View\DodavanjeBrisanjeAviokompanija.xaml
-C:\Users\Lejla\Desktop\Grupa6-piloti\Projekat\Aerodrom\Aerodrom\obj\x86\Debug\View\DodavanjeBrisanjeLinija.xaml
-C:\Users\Lejla\Desktop\Grupa6-piloti\Projekat\Aerodrom\Aerodrom\obj\x86\Debug\View\DodavanjeBrisanjeUposlenika.xaml
-C:\Users\Lejla\Desktop\Grupa6-piloti\Projekat\Aerodrom\Aerodrom\obj\x86\Debug\View\InformacijeAerodrom.xaml
 C:\Users\Lejla\Desktop\Grupa6-piloti\Projekat\Aerodrom\Aerodrom\obj\x86\Debug\View\RezervacijaKarataNaSalteru.xaml
 C:\Users\Lejla\Desktop\Grupa6-piloti\Projekat\Aerodrom\Aerodrom\obj\x86\Debug\View\UnosLicnihPodataka.xaml
 C:\Users\Lejla\Desktop\Grupa6-piloti\Projekat\Aerodrom\Aerodrom\obj\x86\Debug\View\Uprava.xaml
@@ -854,10 +838,6 @@ C:\Users\Lejla\Desktop\Grupa6-piloti\Projekat\Aerodrom\Aerodrom\obj\x86\Debug\Vi
 C:\Users\Lejla\Desktop\Grupa6-piloti\Projekat\Aerodrom\Aerodrom\obj\x86\Debug\View\AviokompanijaZahtjevDetalji.xbf
 C:\Users\Lejla\Desktop\Grupa6-piloti\Projekat\Aerodrom\Aerodrom\obj\x86\Debug\View\AviokompanijaZahtjevi.xbf
 C:\Users\Lejla\Desktop\Grupa6-piloti\Projekat\Aerodrom\Aerodrom\obj\x86\Debug\View\CheckInNaSalteru.xbf
-C:\Users\Lejla\Desktop\Grupa6-piloti\Projekat\Aerodrom\Aerodrom\obj\x86\Debug\View\DodavanjeBrisanjeAviokompanija.xbf
-C:\Users\Lejla\Desktop\Grupa6-piloti\Projekat\Aerodrom\Aerodrom\obj\x86\Debug\View\DodavanjeBrisanjeLinija.xbf
-C:\Users\Lejla\Desktop\Grupa6-piloti\Projekat\Aerodrom\Aerodrom\obj\x86\Debug\View\DodavanjeBrisanjeUposlenika.xbf
-C:\Users\Lejla\Desktop\Grupa6-piloti\Projekat\Aerodrom\Aerodrom\obj\x86\Debug\View\InformacijeAerodrom.xbf
 C:\Users\Lejla\Desktop\Grupa6-piloti\Projekat\Aerodrom\Aerodrom\obj\x86\Debug\View\RezervacijaKarataNaSalteru.xbf
 C:\Users\Lejla\Desktop\Grupa6-piloti\Projekat\Aerodrom\Aerodrom\obj\x86\Debug\View\UnosLicnihPodataka.xbf
 C:\Users\Lejla\Desktop\Grupa6-piloti\Projekat\Aerodrom\Aerodrom\obj\x86\Debug\View\Uprava.xbf

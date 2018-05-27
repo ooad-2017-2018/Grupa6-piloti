@@ -30,6 +30,7 @@ namespace Aerodrom
         {
             this.InitializeComponent();
             this.Suspending += OnSuspending;
+            Globalna g = new Globalna();
         }
 
         /// <summary>

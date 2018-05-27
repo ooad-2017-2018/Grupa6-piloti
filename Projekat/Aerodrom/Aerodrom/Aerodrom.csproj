@@ -93,6 +93,10 @@
     <None Include="project.json" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Globalna.cs" />
+    <Compile Include="Helper\INavigationService.cs" />
+    <Compile Include="Helper\NavigationService.cs" />
+    <Compile Include="Helper\RelayCommand.cs" />
     <Compile Include="Model\Aviokompanija.cs" />
     <Compile Include="Model\Avion.cs" />
     <Compile Include="Model\Charter.cs" />
@@ -108,6 +112,8 @@
     <Compile Include="Model\Zahtjev.cs" />
     <Compile Include="Model\ZahtjevNovaLinija.cs" />
     <Compile Include="Model\ZahtjevOdgoda.cs" />
+    <Compile Include="ViewModel\AdministratorViewModel.cs" />
+    <Compile Include="ViewModel\LoginViewModel.cs" />
     <Compile Include="View\AdministratorPanel.xaml.cs">
       <DependentUpon>AdministratorPanel.xaml</DependentUpon>
     </Compile>
@@ -135,18 +141,6 @@
     </Compile>
     <Compile Include="View\CheckInNaSalteru.xaml.cs">
       <DependentUpon>CheckInNaSalteru.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="View\DodavanjeBrisanjeAviokompanija.xaml.cs">
-      <DependentUpon>DodavanjeBrisanjeAviokompanija.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="View\DodavanjeBrisanjeLinija.xaml.cs">
-      <DependentUpon>DodavanjeBrisanjeLinija.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="View\DodavanjeBrisanjeUposlenika.xaml.cs">
-      <DependentUpon>DodavanjeBrisanjeUposlenika.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="View\InformacijeAerodrom.xaml.cs">
-      <DependentUpon>InformacijeAerodrom.xaml</DependentUpon>
     </Compile>
     <Compile Include="MainPage.xaml.cs">
       <DependentUpon>MainPage.xaml</DependentUpon>
@@ -212,22 +206,6 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="View\CheckInNaSalteru.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="View\DodavanjeBrisanjeAviokompanija.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="View\DodavanjeBrisanjeLinija.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="View\DodavanjeBrisanjeUposlenika.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="View\InformacijeAerodrom.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

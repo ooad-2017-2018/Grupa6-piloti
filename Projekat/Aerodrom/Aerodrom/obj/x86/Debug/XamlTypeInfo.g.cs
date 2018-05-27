@@ -132,7 +132,7 @@ namespace Aerodrom.Aerodrom_XamlTypeInfo
 
         private void InitTypeTables()
         {
-            _typeNameTable = new string[18];
+            _typeNameTable = new string[14];
             _typeNameTable[0] = "Aerodrom.AdministratorPanel";
             _typeNameTable[1] = "Windows.UI.Xaml.Controls.Page";
             _typeNameTable[2] = "Windows.UI.Xaml.Controls.UserControl";
@@ -143,16 +143,12 @@ namespace Aerodrom.Aerodrom_XamlTypeInfo
             _typeNameTable[7] = "Aerodrom.AviokompanijaZahtjevDetalji";
             _typeNameTable[8] = "Aerodrom.AviokompanijaZahtjevi";
             _typeNameTable[9] = "Aerodrom.CheckInNaSalteru";
-            _typeNameTable[10] = "Aerodrom.DodavanjeBrisanjeAviokompanija";
-            _typeNameTable[11] = "Aerodrom.DodavanjeBrisanjeLinija";
-            _typeNameTable[12] = "Aerodrom.DodavanjeBrisanjeUposlenika";
-            _typeNameTable[13] = "Aerodrom.InformacijeAerodrom";
-            _typeNameTable[14] = "Aerodrom.MainPage";
-            _typeNameTable[15] = "Aerodrom.RezervacijaKarataNaSalteru";
-            _typeNameTable[16] = "Aerodrom.UnosLicnihPodataka";
-            _typeNameTable[17] = "Aerodrom.Uprava";
+            _typeNameTable[10] = "Aerodrom.MainPage";
+            _typeNameTable[11] = "Aerodrom.RezervacijaKarataNaSalteru";
+            _typeNameTable[12] = "Aerodrom.UnosLicnihPodataka";
+            _typeNameTable[13] = "Aerodrom.Uprava";
 
-            _typeTable = new global::System.Type[18];
+            _typeTable = new global::System.Type[14];
             _typeTable[0] = typeof(global::Aerodrom.AdministratorPanel);
             _typeTable[1] = typeof(global::Windows.UI.Xaml.Controls.Page);
             _typeTable[2] = typeof(global::Windows.UI.Xaml.Controls.UserControl);
@@ -163,14 +159,10 @@ namespace Aerodrom.Aerodrom_XamlTypeInfo
             _typeTable[7] = typeof(global::Aerodrom.AviokompanijaZahtjevDetalji);
             _typeTable[8] = typeof(global::Aerodrom.AviokompanijaZahtjevi);
             _typeTable[9] = typeof(global::Aerodrom.CheckInNaSalteru);
-            _typeTable[10] = typeof(global::Aerodrom.DodavanjeBrisanjeAviokompanija);
-            _typeTable[11] = typeof(global::Aerodrom.DodavanjeBrisanjeLinija);
-            _typeTable[12] = typeof(global::Aerodrom.DodavanjeBrisanjeUposlenika);
-            _typeTable[13] = typeof(global::Aerodrom.InformacijeAerodrom);
-            _typeTable[14] = typeof(global::Aerodrom.MainPage);
-            _typeTable[15] = typeof(global::Aerodrom.RezervacijaKarataNaSalteru);
-            _typeTable[16] = typeof(global::Aerodrom.UnosLicnihPodataka);
-            _typeTable[17] = typeof(global::Aerodrom.Uprava);
+            _typeTable[10] = typeof(global::Aerodrom.MainPage);
+            _typeTable[11] = typeof(global::Aerodrom.RezervacijaKarataNaSalteru);
+            _typeTable[12] = typeof(global::Aerodrom.UnosLicnihPodataka);
+            _typeTable[13] = typeof(global::Aerodrom.Uprava);
         }
 
         private int LookupTypeIndexByName(string typeName)
@@ -213,14 +205,10 @@ namespace Aerodrom.Aerodrom_XamlTypeInfo
         private object Activate_7_AviokompanijaZahtjevDetalji() { return new global::Aerodrom.AviokompanijaZahtjevDetalji(); }
         private object Activate_8_AviokompanijaZahtjevi() { return new global::Aerodrom.AviokompanijaZahtjevi(); }
         private object Activate_9_CheckInNaSalteru() { return new global::Aerodrom.CheckInNaSalteru(); }
-        private object Activate_10_DodavanjeBrisanjeAviokompanija() { return new global::Aerodrom.DodavanjeBrisanjeAviokompanija(); }
-        private object Activate_11_DodavanjeBrisanjeLinija() { return new global::Aerodrom.DodavanjeBrisanjeLinija(); }
-        private object Activate_12_DodavanjeBrisanjeUposlenika() { return new global::Aerodrom.DodavanjeBrisanjeUposlenika(); }
-        private object Activate_13_InformacijeAerodrom() { return new global::Aerodrom.InformacijeAerodrom(); }
-        private object Activate_14_MainPage() { return new global::Aerodrom.MainPage(); }
-        private object Activate_15_RezervacijaKarataNaSalteru() { return new global::Aerodrom.RezervacijaKarataNaSalteru(); }
-        private object Activate_16_UnosLicnihPodataka() { return new global::Aerodrom.UnosLicnihPodataka(); }
-        private object Activate_17_Uprava() { return new global::Aerodrom.Uprava(); }
+        private object Activate_10_MainPage() { return new global::Aerodrom.MainPage(); }
+        private object Activate_11_RezervacijaKarataNaSalteru() { return new global::Aerodrom.RezervacijaKarataNaSalteru(); }
+        private object Activate_12_UnosLicnihPodataka() { return new global::Aerodrom.UnosLicnihPodataka(); }
+        private object Activate_13_Uprava() { return new global::Aerodrom.Uprava(); }
 
         private global::Windows.UI.Xaml.Markup.IXamlType CreateXamlType(int typeIndex)
         {
@@ -296,58 +284,30 @@ namespace Aerodrom.Aerodrom_XamlTypeInfo
                 xamlType = userType;
                 break;
 
-            case 10:   //  Aerodrom.DodavanjeBrisanjeAviokompanija
+            case 10:   //  Aerodrom.MainPage
                 userType = new global::Aerodrom.Aerodrom_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_10_DodavanjeBrisanjeAviokompanija;
+                userType.Activator = Activate_10_MainPage;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 11:   //  Aerodrom.DodavanjeBrisanjeLinija
+            case 11:   //  Aerodrom.RezervacijaKarataNaSalteru
                 userType = new global::Aerodrom.Aerodrom_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_11_DodavanjeBrisanjeLinija;
+                userType.Activator = Activate_11_RezervacijaKarataNaSalteru;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 12:   //  Aerodrom.DodavanjeBrisanjeUposlenika
+            case 12:   //  Aerodrom.UnosLicnihPodataka
                 userType = new global::Aerodrom.Aerodrom_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_12_DodavanjeBrisanjeUposlenika;
+                userType.Activator = Activate_12_UnosLicnihPodataka;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 13:   //  Aerodrom.InformacijeAerodrom
+            case 13:   //  Aerodrom.Uprava
                 userType = new global::Aerodrom.Aerodrom_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_13_InformacijeAerodrom;
-                userType.SetIsLocalType();
-                xamlType = userType;
-                break;
-
-            case 14:   //  Aerodrom.MainPage
-                userType = new global::Aerodrom.Aerodrom_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_14_MainPage;
-                userType.SetIsLocalType();
-                xamlType = userType;
-                break;
-
-            case 15:   //  Aerodrom.RezervacijaKarataNaSalteru
-                userType = new global::Aerodrom.Aerodrom_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_15_RezervacijaKarataNaSalteru;
-                userType.SetIsLocalType();
-                xamlType = userType;
-                break;
-
-            case 16:   //  Aerodrom.UnosLicnihPodataka
-                userType = new global::Aerodrom.Aerodrom_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_16_UnosLicnihPodataka;
-                userType.SetIsLocalType();
-                xamlType = userType;
-                break;
-
-            case 17:   //  Aerodrom.Uprava
-                userType = new global::Aerodrom.Aerodrom_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_17_Uprava;
+                userType.Activator = Activate_13_Uprava;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
