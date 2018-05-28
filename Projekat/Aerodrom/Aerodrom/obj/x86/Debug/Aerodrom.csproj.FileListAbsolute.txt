@@ -841,3 +841,17 @@ C:\Users\Lejla\Desktop\Grupa6-piloti\Projekat\Aerodrom\Aerodrom\obj\x86\Debug\Vi
 C:\Users\Lejla\Desktop\Grupa6-piloti\Projekat\Aerodrom\Aerodrom\obj\x86\Debug\View\RezervacijaKarataNaSalteru.xbf
 C:\Users\Lejla\Desktop\Grupa6-piloti\Projekat\Aerodrom\Aerodrom\obj\x86\Debug\View\UnosLicnihPodataka.xbf
 C:\Users\Lejla\Desktop\Grupa6-piloti\Projekat\Aerodrom\Aerodrom\obj\x86\Debug\View\Uprava.xbf
+C:\Users\Lejla\Desktop\Grupa6-piloti\Projekat\Aerodrom\Aerodrom\bin\x86\Debug\Microsoft.Azure.Mobile.Client.dll
+C:\Users\Lejla\Desktop\Grupa6-piloti\Projekat\Aerodrom\Aerodrom\bin\x86\Debug\Newtonsoft.Json.dll
+C:\Users\Lejla\Desktop\Grupa6-piloti\Projekat\Aerodrom\Aerodrom\obj\x86\Debug\Microsoft.Azure.Mobile.Client\en-US\Microsoft.WindowsAzure.MobileServices.Resources.resw
+C:\Users\Lejla\Desktop\Grupa6-piloti\Projekat\Aerodrom\Aerodrom\obj\x86\Debug\Aerodrom.csproj.GenerateResource.Cache
+C:\Users\Lejla\Desktop\Grupa6-piloti\Projekat\Aerodrom\Aerodrom\obj\x86\Debug\Microsoft.Azure.Mobile.Client.pri.xml
+C:\Users\Lejla\Desktop\Grupa6-piloti\Projekat\Aerodrom\Aerodrom\bin\x86\Debug\sni.dll
+C:\Users\Lejla\Desktop\Grupa6-piloti\Projekat\Aerodrom\Aerodrom\bin\x86\Debug\System.Console.dll
+C:\Users\Lejla\Desktop\Grupa6-piloti\Projekat\Aerodrom\Aerodrom\bin\x86\Debug\System.Data.SqlClient.dll
+C:\Users\Lejla\Desktop\Grupa6-piloti\Projekat\Aerodrom\Aerodrom\bin\x86\Debug\System.Runtime.InteropServices.RuntimeInformation.dll
+C:\Users\Lejla\Desktop\Grupa6-piloti\Projekat\Aerodrom\Aerodrom\bin\x86\Debug\System.Security.Principal.Windows.dll
+C:\Users\Lejla\Desktop\Grupa6-piloti\Projekat\Aerodrom\Aerodrom\obj\x86\Debug\FxResources.System.Console.SR.resw
+C:\Users\Lejla\Desktop\Grupa6-piloti\Projekat\Aerodrom\Aerodrom\obj\x86\Debug\FxResources.System.Data.SqlClient.SR.resw
+C:\Users\Lejla\Desktop\Grupa6-piloti\Projekat\Aerodrom\Aerodrom\obj\x86\Debug\FxResources.System.Runtime.InteropServices.RuntimeInformation.SR.resw
+C:\Users\Lejla\Desktop\Grupa6-piloti\Projekat\Aerodrom\Aerodrom\obj\x86\Debug\FxResources.System.Security.Principal.Windows.SR.resw

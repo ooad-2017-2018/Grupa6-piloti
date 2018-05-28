@@ -27,6 +27,7 @@ namespace Aerodrom
         {
             this.InitializeComponent();
             DataContext = new AdministratorViewModel();
+            
         }
 
         

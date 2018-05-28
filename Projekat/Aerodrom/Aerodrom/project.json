@@ -1,6 +1,8 @@
 ﻿{
   "dependencies": {
-    "Microsoft.NETCore.UniversalWindowsPlatform": "5.2.3"
+    "Microsoft.Azure.Mobile.Client": "4.0.2",
+    "Microsoft.NETCore.UniversalWindowsPlatform": "5.2.3",
+    "System.Data.SqlClient": "4.4.3"
   },
   "frameworks": {
     "uap10.0": {}

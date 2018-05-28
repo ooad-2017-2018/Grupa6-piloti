@@ -13,6 +13,7 @@ using Windows.UI.Xaml.Controls.Primitives;
 using Windows.UI.Xaml.Data;
 using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Media;
+using Microsoft.WindowsAzure.MobileServices;
 using Windows.UI.Xaml.Navigation;
 
 namespace Aerodrom
@@ -22,6 +23,10 @@ namespace Aerodrom
     /// </summary>
     sealed partial class App : Application
     {
+
+        
+        public static MobileServiceClient MobileService = new MobileServiceClient("https://aerodrompiloti.azurewebsites.net");
+        private string konekcija = "Data Source=tcp:aerodrompilotiserver.database.windows.net,1433;Initial Catalog=Aerodrom;User ID=aerodromadmin;Password=Admin123;";
         /// <summary>
         /// Initializes the singleton application object.  This is the first line of authored code
         /// executed, and as such is the logical equivalent of main() or WinMain().
@@ -32,6 +37,8 @@ namespace Aerodrom
             this.Suspending += OnSuspending;
             Globalna g = new Globalna();
         }
+
+        public string Konekcija { get => konekcija; set => konekcija = value; }
 
         /// <summary>
         /// Invoked when the application is launched normally by the end user.  Other entry points

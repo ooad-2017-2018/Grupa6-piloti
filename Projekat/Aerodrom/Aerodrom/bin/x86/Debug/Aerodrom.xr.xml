@@ -1,6 +1,17 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Roots >
   <Roots.PropertyPathNames>
+    <RootPropertyPathName Name="PonistiUposlenika" />
+    <RootPropertyPathName Name="ObrisiUposlenika" />
+    <RootPropertyPathName Name="DodajIzmjeniUpslenika" />
+    <RootPropertyPathName Name="DatumRodjenja" />
+    <RootPropertyPathName Name="Pozicije" />
+    <RootPropertyPathName Name="Ime" />
+    <RootPropertyPathName Name="Telefon" />
+    <RootPropertyPathName Name="Plata" />
+    <RootPropertyPathName Name="Email" />
+    <RootPropertyPathName Name="Prezime" />
+    <RootPropertyPathName Name="OdabraniUposlenik" />
     <RootPropertyPathName Name="SpasiPromjene" />
     <RootPropertyPathName Name="Avioni" />
     <RootPropertyPathName Name="Piste" />
@@ -89,9 +100,9 @@
       <RootProperty Name="Margin" />
       <RootProperty Name="VerticalAlignment" />
       <RootProperty Name="Width" />
+      <RootProperty Name="Command" />
       <RootProperty Name="Height" />
       <RootProperty Name="RenderTransformOrigin" />
-      <RootProperty Name="Command" />
       <RootProperty Name="FontSize" />
       <RootEvent Name="Click" />
     </RootType>
@@ -104,6 +115,7 @@
       <RootProperty Name="BorderBrush" />
       <RootProperty Name="BorderThickness" />
       <RootProperty Name="Items" />
+      <RootProperty Name="SelectedValue" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.ListViewItem">
       <RootProperty Name="Content" />
@@ -113,16 +125,7 @@
       <RootProperty Name="Margin" />
       <RootProperty Name="VerticalAlignment" />
       <RootProperty Name="Width" />
-    </RootType>
-    <RootType FullName="Windows.UI.Xaml.Controls.RadioButton">
-      <RootProperty Name="Content" />
-      <RootProperty Name="HorizontalAlignment" />
-      <RootProperty Name="Margin" />
-      <RootProperty Name="VerticalAlignment" />
-      <RootProperty Name="FontSize" />
-      <RootProperty Name="Height" />
-      <RootProperty Name="Width" />
-      <RootEvent Name="Checked" />
+      <RootProperty Name="Date" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Data.Binding">
       <RootProperty Name="Path" />
@@ -160,6 +163,16 @@
       <RootProperty Name="MinHeight" />
       <RootProperty Name="Margin" />
       <RootProperty Name="Children" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.RadioButton">
+      <RootProperty Name="Content" />
+      <RootProperty Name="HorizontalAlignment" />
+      <RootProperty Name="Margin" />
+      <RootProperty Name="VerticalAlignment" />
+      <RootProperty Name="FontSize" />
+      <RootProperty Name="Height" />
+      <RootProperty Name="Width" />
+      <RootEvent Name="Checked" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Media.CompositeTransform">
       <RootProperty Name="Rotation" />

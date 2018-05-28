@@ -14,6 +14,7 @@ namespace Aerodrom
         private static int brojGateova = 10;
         private static ObservableCollection<Avion> avioni = new ObservableCollection<Avion>();
         private static ObservableCollection<Pista> piste = new ObservableCollection<Pista>();
+        
 
         public static string NazivAerodroma { get => nazivAerodroma; set => nazivAerodroma = value; }
         public static int BrojGateova { get => brojGateova; set => brojGateova = value; }
@@ -67,6 +68,18 @@ namespace Aerodrom
             }
 
             return stringovi;
+        }
+
+        public static ObservableCollection<String> dohvatiPozicije()
+        {
+            ObservableCollection<String> stringovi = new ObservableCollection<String>();
+            stringovi.Add("Uprava");
+            stringovi.Add("SalterRezervacija");
+            stringovi.Add("SalterCheckIn");
+            stringovi.Add("Kontrolor");
+
+            return stringovi;
+
         }
     }
 
