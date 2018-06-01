@@ -1,6 +1,15 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Roots >
   <Roots.PropertyPathNames>
+    <RootPropertyPathName Name="PonistiAviokompaniju" />
+    <RootPropertyPathName Name="ObrisiAviokompaniju" />
+    <RootPropertyPathName Name="DodajIzmjeniAviokompaniju" />
+    <RootPropertyPathName Name="NazivAviokompanije" />
+    <RootPropertyPathName Name="KontakOsobaAviokompanije" />
+    <RootPropertyPathName Name="TelefonAviokompanije" />
+    <RootPropertyPathName Name="EmailAviokompanije" />
+    <RootPropertyPathName Name="Aviokompanije" />
+    <RootPropertyPathName Name="OdabranaAviokompanija" />
     <RootPropertyPathName Name="PonistiUposlenika" />
     <RootPropertyPathName Name="ObrisiUposlenika" />
     <RootPropertyPathName Name="DodajIzmjeniUpslenika" />
@@ -11,6 +20,7 @@
     <RootPropertyPathName Name="Plata" />
     <RootPropertyPathName Name="Email" />
     <RootPropertyPathName Name="Prezime" />
+    <RootPropertyPathName Name="Uposlenici" />
     <RootPropertyPathName Name="OdabraniUposlenik" />
     <RootPropertyPathName Name="SpasiPromjene" />
     <RootPropertyPathName Name="Avioni" />
@@ -74,6 +84,7 @@
       <RootProperty Name="VerticalAlignment" />
       <RootProperty Name="Width" />
       <RootProperty Name="ItemsSource" />
+      <RootProperty Name="SelectedValue" />
       <RootProperty Name="IsSynchronizedWithCurrentItem" />
       <RootProperty Name="IsDropDownOpen" />
     </RootType>
@@ -106,19 +117,9 @@
       <RootProperty Name="FontSize" />
       <RootEvent Name="Click" />
     </RootType>
-    <RootType FullName="Windows.UI.Xaml.Controls.ListView">
-      <RootProperty Name="HorizontalAlignment" />
-      <RootProperty Name="Height" />
-      <RootProperty Name="Margin" />
-      <RootProperty Name="VerticalAlignment" />
-      <RootProperty Name="Width" />
-      <RootProperty Name="BorderBrush" />
-      <RootProperty Name="BorderThickness" />
-      <RootProperty Name="Items" />
-      <RootProperty Name="SelectedValue" />
-    </RootType>
-    <RootType FullName="Windows.UI.Xaml.Controls.ListViewItem">
-      <RootProperty Name="Content" />
+    <RootType FullName="Windows.UI.Xaml.Data.Binding">
+      <RootProperty Name="Path" />
+      <RootProperty Name="Mode" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.DatePicker">
       <RootProperty Name="HorizontalAlignment" />
@@ -126,10 +127,6 @@
       <RootProperty Name="VerticalAlignment" />
       <RootProperty Name="Width" />
       <RootProperty Name="Date" />
-    </RootType>
-    <RootType FullName="Windows.UI.Xaml.Data.Binding">
-      <RootProperty Name="Path" />
-      <RootProperty Name="Mode" />
     </RootType>
     <RootType FullName="Aerodrom.AdministratorPanel" />
     <RootType FullName="Windows.UI.Xaml.Controls.ListBox">

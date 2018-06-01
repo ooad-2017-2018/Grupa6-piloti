@@ -24616,10 +24616,10 @@
   },
   "project": {
     "restore": {
-      "projectUniqueName": "C:\\Users\\Lejla\\Desktop\\Grupa6-piloti\\Projekat\\Aerodrom\\Aerodrom\\Aerodrom.csproj",
+      "projectUniqueName": "C:\\Users\\Lejla\\Desktop\\New folder\\Grupa6-piloti\\Projekat\\Aerodrom\\Aerodrom\\Aerodrom.csproj",
       "projectName": "Aerodrom",
-      "projectPath": "C:\\Users\\Lejla\\Desktop\\Grupa6-piloti\\Projekat\\Aerodrom\\Aerodrom\\Aerodrom.csproj",
-      "projectJsonPath": "C:\\Users\\Lejla\\Desktop\\Grupa6-piloti\\Projekat\\Aerodrom\\Aerodrom\\project.json",
+      "projectPath": "C:\\Users\\Lejla\\Desktop\\New folder\\Grupa6-piloti\\Projekat\\Aerodrom\\Aerodrom\\Aerodrom.csproj",
+      "projectJsonPath": "C:\\Users\\Lejla\\Desktop\\New folder\\Grupa6-piloti\\Projekat\\Aerodrom\\Aerodrom\\project.json",
       "projectStyle": "ProjectJson"
     },
     "dependencies": {

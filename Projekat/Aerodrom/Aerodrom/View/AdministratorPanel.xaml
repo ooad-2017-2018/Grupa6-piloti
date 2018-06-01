@@ -26,12 +26,11 @@
             </PivotItem>
             <PivotItem Header="Upravljanje uposlenicima">
                 <Grid>
-                    <ListView HorizontalAlignment="Left" Height="438" Margin="58,114,0,0" VerticalAlignment="Top" Width="327" BorderBrush="Black" BorderThickness="2" SelectedValue="{Binding Path=OdabraniUposlenik, Mode=TwoWay}" >
-                        <ListViewItem Content="Pero Perić"/>
-                        <ListViewItem Content="Memo Memić"/>
-                        <ListViewItem Content="Fata Fatić"/>
-                        
-                    </ListView>
+                    <ComboBox Margin="60,114,0,0" Width="325" ItemsSource="{Binding Path=Uposlenici}" SelectedValue="{Binding Path=OdabraniUposlenik, Mode=TwoWay}">
+
+                    </ComboBox>
+
+
                     <TextBlock HorizontalAlignment="Left" Margin="60,73,0,0" TextWrapping="Wrap" Text="Odaberite uposlenika čije podatke želite izmjeniti" VerticalAlignment="Top"/>
                     <TextBlock HorizontalAlignment="Left" Margin="716,98,0,0" TextWrapping="Wrap" Text="Ime" VerticalAlignment="Top"/>
                     <TextBlock HorizontalAlignment="Left" Margin="716,147,0,0" TextWrapping="Wrap" Text="Prezime" VerticalAlignment="Top"/>
@@ -54,23 +53,21 @@
             </PivotItem>
             <PivotItem Header="Upravljanje aviokompanijama">
                 <Grid>
-                    <ListView HorizontalAlignment="Left" Height="438" Margin="58,114,0,0" VerticalAlignment="Top" Width="353" BorderBrush="Black" BorderThickness="2">
-                        <ListViewItem Content="Turkish Airlines"/>
-                        <ListViewItem Content="Air America"/>
-                        <ListViewItem Content="Lufthansa"/>
-                    </ListView>
+                    <ComboBox Margin="60,129,0,0" Width="351" ItemsSource="{Binding Path=Aviokompanije}" SelectedValue="{Binding Path=OdabranaAviokompanija}" >
+
+                    </ComboBox>
                     <TextBlock HorizontalAlignment="Left" Margin="60,73,0,0" TextWrapping="Wrap" Text="Odaberite aviokompaniju čije podatke želite izmjeniti" VerticalAlignment="Top"/>
                     <TextBlock HorizontalAlignment="Left" Margin="713,271,0,0" TextWrapping="Wrap" Text="E-mail" VerticalAlignment="Top"/>
                     <TextBlock HorizontalAlignment="Left" Margin="713,318,0,0" TextWrapping="Wrap" Text="Telefon" VerticalAlignment="Top"/>
-                    <TextBox HorizontalAlignment="Left" Margin="899,259,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="296"/>
-                    <TextBox HorizontalAlignment="Left" Margin="899,306,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="296"/>
+                    <TextBox HorizontalAlignment="Left" Margin="899,259,0,0" TextWrapping="Wrap" Text="{Binding Path=EmailAviokompanije, Mode=TwoWay}" VerticalAlignment="Top" Width="296"/>
+                    <TextBox HorizontalAlignment="Left" Margin="899,306,0,0" TextWrapping="Wrap" Text="{Binding Path=TelefonAviokompanije, Mode=TwoWay}" VerticalAlignment="Top" Width="296"/>
                     <TextBlock HorizontalAlignment="Left" Margin="713,218,0,0" TextWrapping="Wrap" Text="Kontakt osoba" VerticalAlignment="Top"/>
-                    <TextBox HorizontalAlignment="Left" Margin="899,206,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="296"/>
+                    <TextBox HorizontalAlignment="Left" Margin="899,206,0,0" TextWrapping="Wrap" Text="{Binding Path=KontakOsobaAviokompanije, Mode=TwoWay}" VerticalAlignment="Top" Width="296"/>
                     <TextBlock HorizontalAlignment="Left" Margin="713,162,0,0" TextWrapping="Wrap" Text="Naziv aviokompanije" VerticalAlignment="Top"/>
-                    <TextBox HorizontalAlignment="Left" Margin="899,150,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="296"/>
-                    <Button Content="Dodaj / Izmjeni" HorizontalAlignment="Left" Margin="881,445,0,0" VerticalAlignment="Top" Width="153"/>
-                    <Button Content="Obriši" HorizontalAlignment="Left" Margin="731,445,0,0" VerticalAlignment="Top" Width="115"/>
-                    <Button Content="Poništi" HorizontalAlignment="Left" Margin="1067,445,0,0" VerticalAlignment="Top" Width="100"/>
+                    <TextBox HorizontalAlignment="Left" Margin="899,150,0,0" TextWrapping="Wrap" Text="{Binding Path=NazivAviokompanije, Mode=TwoWay}" VerticalAlignment="Top" Width="296"/>
+                    <Button Content="Dodaj / Izmjeni" HorizontalAlignment="Left" Margin="881,445,0,0" VerticalAlignment="Top" Width="153" Command="{Binding Path=DodajIzmjeniAviokompaniju}"/>
+                    <Button Content="Obriši" HorizontalAlignment="Left" Margin="731,445,0,0" VerticalAlignment="Top" Width="115" Command="{Binding Path=ObrisiAviokompaniju}"/>
+                    <Button Content="Poništi" HorizontalAlignment="Left" Margin="1067,445,0,0" VerticalAlignment="Top" Width="100" Command="{Binding Path=PonistiAviokompaniju}"/>
                 </Grid>
             </PivotItem>
             <PivotItem Header="Upravljanje linijama">
@@ -78,35 +75,17 @@
                     <FlyoutBase.AttachedFlyout>
                         <TimePickerFlyout/>
                     </FlyoutBase.AttachedFlyout>
-                    <TextBlock HorizontalAlignment="Left" Margin="343,37,0,0" TextWrapping="Wrap" Text="Odaberite aviokompaniju" VerticalAlignment="Top"/>
-                    <TextBlock HorizontalAlignment="Left" Margin="708,39,0,0" TextWrapping="Wrap" Text="Odaberite liniju" VerticalAlignment="Top"/>
-                    <ComboBox HorizontalAlignment="Left" Margin="343,80,0,0" VerticalAlignment="Top" Width="203"/>
-                    <ComboBox HorizontalAlignment="Left" Margin="708,80,0,0" VerticalAlignment="Top" Width="203"/>
-                    <TextBlock HorizontalAlignment="Left" Margin="121,246,0,0" TextWrapping="Wrap" Text="Aviokompanija" VerticalAlignment="Top"/>
-                    <TextBlock HorizontalAlignment="Left" Margin="121,292,0,0" TextWrapping="Wrap" Text="Oznaka linije" VerticalAlignment="Top"/>
-                    <TextBlock HorizontalAlignment="Left" Margin="121,347,0,0" TextWrapping="Wrap" Text="Destinacija" VerticalAlignment="Top"/>
-                    <TextBlock HorizontalAlignment="Left" Margin="121,396,0,0" TextWrapping="Wrap" Text="Avion" VerticalAlignment="Top"/>
-                    <TextBlock HorizontalAlignment="Left" Margin="121,449,0,0" TextWrapping="Wrap" Text="Prosječno trajanje leta" VerticalAlignment="Top"/>
-                    <TextBlock HorizontalAlignment="Left" Margin="121,505,0,0" TextWrapping="Wrap" Text="Cijena" VerticalAlignment="Top"/>
-                    <TextBlock HorizontalAlignment="Left" Margin="721,301,0,0" TextWrapping="Wrap" Text="Dani odlazaka" VerticalAlignment="Top"/>
-                    <TextBlock HorizontalAlignment="Left" Margin="721,357,0,0" TextWrapping="Wrap" Text="Dani dolazaka" VerticalAlignment="Top"/>
-                    <TextBlock HorizontalAlignment="Left" Margin="721,416,0,0" TextWrapping="Wrap" Text="Vrijeme odlazaka" VerticalAlignment="Top"/>
-                    <TextBlock HorizontalAlignment="Left" Margin="721,476,0,0" TextWrapping="Wrap" Text="Vrijeme dolazaka" VerticalAlignment="Top"/>
-                    <ComboBox HorizontalAlignment="Left" Margin="322,234,0,0" VerticalAlignment="Top" Width="242"/>
-                    <ComboBox HorizontalAlignment="Left" Margin="922,289,0,0" VerticalAlignment="Top" Width="242" >
+                    <TextBlock HorizontalAlignment="Left" Margin="258,37,0,0" TextWrapping="Wrap" Text="Odaberite aviokompaniju" VerticalAlignment="Top"/>
+                    <TextBlock HorizontalAlignment="Left" Margin="566,39,0,0" TextWrapping="Wrap" Text="Odaberite postojeću liniju" VerticalAlignment="Top"/>
+                    <ComboBox HorizontalAlignment="Left" Margin="258,80,0,0" VerticalAlignment="Top" Width="203" ItemsSource="{Binding Path=Aviokompanije}" SelectedValue="{Binding Path=OdabranaAviokompanijaLinije, Mode=TwoWay}"/>
+                    <ComboBox HorizontalAlignment="Left" Margin="566,80,0,0" VerticalAlignment="Top" Width="203" ItemsSource="{Binding Path=PostojeceLinije}" SelectedValue="{Binding Path=OdabranaLinijaZaDodat, Mode=TwoWay}"/>
 
-                    </ComboBox>
-                    <ComboBox HorizontalAlignment="Left" Margin="922,345,0,0" VerticalAlignment="Top" Width="242" />
-                    <TimePicker HorizontalAlignment="Left" Margin="922,404,0,0" VerticalAlignment="Top"/>
-                    <TimePicker HorizontalAlignment="Left" Margin="922,464,0,0" VerticalAlignment="Top"/>
-                    <ComboBox HorizontalAlignment="Left" Margin="322,380,0,0" VerticalAlignment="Top" Width="242"/>
-                    <TextBox HorizontalAlignment="Left" Margin="322,493,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="242"/>
-                    <TextBox HorizontalAlignment="Left" Margin="322,288,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="242"/>
-                    <TextBox HorizontalAlignment="Left" Margin="322,335,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="242"/>
-                    <TextBox HorizontalAlignment="Left" Margin="322,433,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="242"/>
-                    <Button Content="Dodaj / Izmjeni" HorizontalAlignment="Left" Margin="574,570,0,0" VerticalAlignment="Top" Width="153"/>
-                    <Button Content="Obriši" HorizontalAlignment="Left" Margin="424, 570,0,0" VerticalAlignment="Top" Width="115"/>
-                    <Button Content="Poništi" HorizontalAlignment="Left" Margin="760,570,0,0" VerticalAlignment="Top" Width="100"/>
+
+                    <Button Content="Dodaj liniju" HorizontalAlignment="Left" Margin="887,137,0,0" VerticalAlignment="Top" Width="153"  Command="{Binding Path=DodajLiniju}"/>
+                    <Button Content="Obriši" HorizontalAlignment="Left" Margin="604,137,0,0" VerticalAlignment="Top" Width="115"  Command="{Binding Path=ObrisiLiniju}"/>
+                    <TextBlock HorizontalAlignment="Left" Margin="857,39,0,0" TextWrapping="Wrap" Text="Odaberite liniju za dodati" VerticalAlignment="Top"/>
+                    <ComboBox HorizontalAlignment="Left" Margin="857,80,0,0" VerticalAlignment="Top" Width="203" ItemsSource="{Binding Path=OdobreneLinije}" SelectedValue="{Binding Path=OdabranaLinijaZaObrisat, Mode=TwoWay}"/>
+                    <Button Content="Prikaži linije" HorizontalAlignment="Left" Margin="272,137,0,0" VerticalAlignment="Top" Width="153" Command="{Binding Path=PrikaziLinije}"/>
                 </Grid>
             </PivotItem>
         </Pivot>
