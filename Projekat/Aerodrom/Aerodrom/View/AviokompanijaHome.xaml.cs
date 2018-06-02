@@ -15,7 +15,7 @@ using Windows.UI.Xaml.Navigation;
 
 // The Blank Page item template is documented at https://go.microsoft.com/fwlink/?LinkId=234238
 
-namespace Aerodrom
+namespace Aerodrom.View
 {
     /// <summary>
     /// An empty page that can be used on its own or navigated to within a Frame.
@@ -25,26 +25,6 @@ namespace Aerodrom
         public AviokompanijaHome()
         {
             this.InitializeComponent();
-        }
-
-        private void Button_Click(object sender, RoutedEventArgs e)
-        {
-            Frame.Navigate(typeof(AviokompanijaLetDetalji));
-        }
-
-        private void Button_Click_1(object sender, RoutedEventArgs e)
-        {
-            Frame.Navigate(typeof(AviokompanijaAnaliza));
-        }
-
-        private void Button_Click_2(object sender, RoutedEventArgs e)
-        {
-            Frame.Navigate(typeof(AviokompanijaNoviLet));
-        }
-
-        private void Button_Click_3(object sender, RoutedEventArgs e)
-        {
-            Frame.Navigate(typeof(AviokompanijaZahtjevi));
         }
     }
 }

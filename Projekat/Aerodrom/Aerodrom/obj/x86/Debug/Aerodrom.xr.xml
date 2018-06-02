@@ -1,6 +1,15 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Roots >
   <Roots.PropertyPathNames>
+    <RootPropertyPathName Name="PrikaziLinije" />
+    <RootPropertyPathName Name="OdobreneLinije" />
+    <RootPropertyPathName Name="OdabranaLinijaZaObrisat" />
+    <RootPropertyPathName Name="ObrisiLiniju" />
+    <RootPropertyPathName Name="DodajLiniju" />
+    <RootPropertyPathName Name="PostojeceLinije" />
+    <RootPropertyPathName Name="OdabranaLinijaZaDodat" />
+    <RootPropertyPathName Name="Aviokompanije" />
+    <RootPropertyPathName Name="OdabranaAviokompanijaLinije" />
     <RootPropertyPathName Name="PonistiAviokompaniju" />
     <RootPropertyPathName Name="ObrisiAviokompaniju" />
     <RootPropertyPathName Name="DodajIzmjeniAviokompaniju" />
@@ -8,7 +17,6 @@
     <RootPropertyPathName Name="KontakOsobaAviokompanije" />
     <RootPropertyPathName Name="TelefonAviokompanije" />
     <RootPropertyPathName Name="EmailAviokompanije" />
-    <RootPropertyPathName Name="Aviokompanije" />
     <RootPropertyPathName Name="OdabranaAviokompanija" />
     <RootPropertyPathName Name="PonistiUposlenika" />
     <RootPropertyPathName Name="ObrisiUposlenika" />
@@ -28,6 +36,25 @@
     <RootPropertyPathName Name="BrojGateova" />
     <RootPropertyPathName Name="NazivAerodroma" />
     <RootPropertyPathName Name="Izlaz" />
+    <RootPropertyPathName Name="Pretrazi" />
+    <RootPropertyPathName Name="PutnikInfo" />
+    <RootPropertyPathName Name="PrikazDoplate" />
+    <RootPropertyPathName Name="ProvjeriPrtljag" />
+    <RootPropertyPathName Name="TezinaPrtljaga" />
+    <RootPropertyPathName Name="LicniDokument" />
+    <RootPropertyPathName Name="CheckIn" />
+    <RootPropertyPathName Name="PrikaziDetaljeLinija" />
+    <RootPropertyPathName Name="OdobriZahtjevLinija" />
+    <RootPropertyPathName Name="ObrisiZahtjevLinija" />
+    <RootPropertyPathName Name="DetaljiZahtjevaLinija" />
+    <RootPropertyPathName Name="ZahtjeviLinije" />
+    <RootPropertyPathName Name="OdabraniZahtjevLinija" />
+    <RootPropertyPathName Name="PrikaziDetalje" />
+    <RootPropertyPathName Name="OdobriZahtjev" />
+    <RootPropertyPathName Name="ObrisiZahtjev" />
+    <RootPropertyPathName Name="DetaljiZahtjeva" />
+    <RootPropertyPathName Name="ZahtjeviOdgoda" />
+    <RootPropertyPathName Name="OdabraniZahtjev" />
   </Roots.PropertyPathNames>
   <Roots.RootTypes>
     <RootType FullName="Windows.UI.Xaml.Application">
@@ -43,10 +70,6 @@
       <RootProperty Name="RowDefinitions" />
       <RootMethod Name="GetRowSpan" />
       <RootMethod Name="SetRowSpan" />
-      <RootMethod Name="GetColumn" />
-      <RootMethod Name="SetColumn" />
-      <RootMethod Name="GetRow" />
-      <RootMethod Name="SetRow" />
     </RootType>
     <RootType FullName="Microsoft.Xaml.DirectUI.ProxyTypes.ThemeResourceExtension" />
     <RootType FullName="Windows.UI.Xaml.Controls.Pivot">
@@ -85,25 +108,7 @@
       <RootProperty Name="Width" />
       <RootProperty Name="ItemsSource" />
       <RootProperty Name="SelectedValue" />
-      <RootProperty Name="IsSynchronizedWithCurrentItem" />
-      <RootProperty Name="IsDropDownOpen" />
-    </RootType>
-    <RootType FullName="Windows.UI.Xaml.Controls.TimePicker">
-      <RootProperty Name="HorizontalAlignment" />
-      <RootProperty Name="Margin" />
-      <RootProperty Name="VerticalAlignment" />
-    </RootType>
-    <RootType FullName="Windows.UI.Xaml.Controls.TextBox">
-      <RootProperty Name="HorizontalAlignment" />
-      <RootProperty Name="Margin" />
-      <RootProperty Name="TextWrapping" />
-      <RootProperty Name="Text" />
-      <RootProperty Name="VerticalAlignment" />
-      <RootProperty Name="Width" />
-      <RootProperty Name="RenderTransformOrigin" />
       <RootProperty Name="Height" />
-      <RootProperty Name="FontSize" />
-      <RootEvent Name="TextChanged" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.Button">
       <RootProperty Name="Content" />
@@ -120,6 +125,18 @@
     <RootType FullName="Windows.UI.Xaml.Data.Binding">
       <RootProperty Name="Path" />
       <RootProperty Name="Mode" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.TextBox">
+      <RootProperty Name="HorizontalAlignment" />
+      <RootProperty Name="Margin" />
+      <RootProperty Name="TextWrapping" />
+      <RootProperty Name="Text" />
+      <RootProperty Name="VerticalAlignment" />
+      <RootProperty Name="Width" />
+      <RootProperty Name="RenderTransformOrigin" />
+      <RootProperty Name="Height" />
+      <RootProperty Name="FontSize" />
+      <RootEvent Name="TextChanged" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.DatePicker">
       <RootProperty Name="HorizontalAlignment" />
@@ -161,43 +178,17 @@
       <RootProperty Name="Margin" />
       <RootProperty Name="Children" />
     </RootType>
-    <RootType FullName="Windows.UI.Xaml.Controls.RadioButton">
-      <RootProperty Name="Content" />
-      <RootProperty Name="HorizontalAlignment" />
-      <RootProperty Name="Margin" />
-      <RootProperty Name="VerticalAlignment" />
-      <RootProperty Name="FontSize" />
-      <RootProperty Name="Height" />
-      <RootProperty Name="Width" />
-      <RootEvent Name="Checked" />
-    </RootType>
     <RootType FullName="Windows.UI.Xaml.Media.CompositeTransform">
       <RootProperty Name="Rotation" />
       <RootProperty Name="TranslateX" />
       <RootProperty Name="TranslateY" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Documents.Run">
-      <RootProperty Name="FontSize" />
       <RootProperty Name="Text" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Documents.LineBreak" />
     <RootType FullName="Aerodrom.CheckInNaSalteru" />
     <RootType FullName="Aerodrom.MainPage" />
-    <RootType FullName="Windows.UI.Xaml.Controls.CheckBox">
-      <RootProperty Name="Content" />
-      <RootProperty Name="HorizontalAlignment" />
-      <RootProperty Name="Margin" />
-      <RootProperty Name="VerticalAlignment" />
-    </RootType>
-    <RootType FullName="Windows.UI.Xaml.Controls.GridView">
-      <RootProperty Name="HorizontalAlignment" />
-      <RootProperty Name="Height" />
-      <RootProperty Name="Margin" />
-      <RootProperty Name="VerticalAlignment" />
-      <RootProperty Name="Width" />
-    </RootType>
-    <RootType FullName="Aerodrom.RezervacijaKarataNaSalteru" />
-    <RootType FullName="Aerodrom.UnosLicnihPodataka" />
     <RootType FullName="Aerodrom.Uprava" />
   </Roots.RootTypes>
 </Roots>

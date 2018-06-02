@@ -865,8 +865,6 @@ C:\Users\Lejla\Desktop\New folder\Grupa6-piloti\Projekat\Aerodrom\Aerodrom\bin\x
 C:\Users\Lejla\Desktop\New folder\Grupa6-piloti\Projekat\Aerodrom\Aerodrom\bin\x86\Debug\View\AviokompanijaZahtjevi.xbf
 C:\Users\Lejla\Desktop\New folder\Grupa6-piloti\Projekat\Aerodrom\Aerodrom\bin\x86\Debug\View\CheckInNaSalteru.xbf
 C:\Users\Lejla\Desktop\New folder\Grupa6-piloti\Projekat\Aerodrom\Aerodrom\bin\x86\Debug\MainPage.xbf
-C:\Users\Lejla\Desktop\New folder\Grupa6-piloti\Projekat\Aerodrom\Aerodrom\bin\x86\Debug\View\RezervacijaKarataNaSalteru.xbf
-C:\Users\Lejla\Desktop\New folder\Grupa6-piloti\Projekat\Aerodrom\Aerodrom\bin\x86\Debug\View\UnosLicnihPodataka.xbf
 C:\Users\Lejla\Desktop\New folder\Grupa6-piloti\Projekat\Aerodrom\Aerodrom\bin\x86\Debug\View\Uprava.xbf
 C:\Users\Lejla\Desktop\New folder\Grupa6-piloti\Projekat\Aerodrom\Aerodrom\bin\x86\Debug\Aerodrom.xr.xml
 C:\Users\Lejla\Desktop\New folder\Grupa6-piloti\Projekat\Aerodrom\Aerodrom\bin\x86\Debug\Aerodrom.exe
@@ -1018,10 +1016,6 @@ C:\Users\Lejla\Desktop\New folder\Grupa6-piloti\Projekat\Aerodrom\Aerodrom\obj\x
 C:\Users\Lejla\Desktop\New folder\Grupa6-piloti\Projekat\Aerodrom\Aerodrom\obj\x86\Debug\View\CheckInNaSalteru.g.cs
 C:\Users\Lejla\Desktop\New folder\Grupa6-piloti\Projekat\Aerodrom\Aerodrom\obj\x86\Debug\MainPage.g.i.cs
 C:\Users\Lejla\Desktop\New folder\Grupa6-piloti\Projekat\Aerodrom\Aerodrom\obj\x86\Debug\MainPage.g.cs
-C:\Users\Lejla\Desktop\New folder\Grupa6-piloti\Projekat\Aerodrom\Aerodrom\obj\x86\Debug\View\RezervacijaKarataNaSalteru.g.i.cs
-C:\Users\Lejla\Desktop\New folder\Grupa6-piloti\Projekat\Aerodrom\Aerodrom\obj\x86\Debug\View\RezervacijaKarataNaSalteru.g.cs
-C:\Users\Lejla\Desktop\New folder\Grupa6-piloti\Projekat\Aerodrom\Aerodrom\obj\x86\Debug\View\UnosLicnihPodataka.g.i.cs
-C:\Users\Lejla\Desktop\New folder\Grupa6-piloti\Projekat\Aerodrom\Aerodrom\obj\x86\Debug\View\UnosLicnihPodataka.g.cs
 C:\Users\Lejla\Desktop\New folder\Grupa6-piloti\Projekat\Aerodrom\Aerodrom\obj\x86\Debug\View\Uprava.g.i.cs
 C:\Users\Lejla\Desktop\New folder\Grupa6-piloti\Projekat\Aerodrom\Aerodrom\obj\x86\Debug\View\Uprava.g.cs
 C:\Users\Lejla\Desktop\New folder\Grupa6-piloti\Projekat\Aerodrom\Aerodrom\obj\x86\Debug\XamlTypeInfo.g.cs
@@ -1034,8 +1028,6 @@ C:\Users\Lejla\Desktop\New folder\Grupa6-piloti\Projekat\Aerodrom\Aerodrom\obj\x
 C:\Users\Lejla\Desktop\New folder\Grupa6-piloti\Projekat\Aerodrom\Aerodrom\obj\x86\Debug\View\AviokompanijaZahtjevi.xaml
 C:\Users\Lejla\Desktop\New folder\Grupa6-piloti\Projekat\Aerodrom\Aerodrom\obj\x86\Debug\View\CheckInNaSalteru.xaml
 C:\Users\Lejla\Desktop\New folder\Grupa6-piloti\Projekat\Aerodrom\Aerodrom\obj\x86\Debug\MainPage.xaml
-C:\Users\Lejla\Desktop\New folder\Grupa6-piloti\Projekat\Aerodrom\Aerodrom\obj\x86\Debug\View\RezervacijaKarataNaSalteru.xaml
-C:\Users\Lejla\Desktop\New folder\Grupa6-piloti\Projekat\Aerodrom\Aerodrom\obj\x86\Debug\View\UnosLicnihPodataka.xaml
 C:\Users\Lejla\Desktop\New folder\Grupa6-piloti\Projekat\Aerodrom\Aerodrom\obj\x86\Debug\View\Uprava.xaml
 C:\Users\Lejla\Desktop\New folder\Grupa6-piloti\Projekat\Aerodrom\Aerodrom\obj\x86\Debug\View\AdministratorPanel.xaml
 C:\Users\Lejla\Desktop\New folder\Grupa6-piloti\Projekat\Aerodrom\Aerodrom\obj\x86\Debug\App.xbf
@@ -1047,8 +1039,6 @@ C:\Users\Lejla\Desktop\New folder\Grupa6-piloti\Projekat\Aerodrom\Aerodrom\obj\x
 C:\Users\Lejla\Desktop\New folder\Grupa6-piloti\Projekat\Aerodrom\Aerodrom\obj\x86\Debug\View\AviokompanijaZahtjevi.xbf
 C:\Users\Lejla\Desktop\New folder\Grupa6-piloti\Projekat\Aerodrom\Aerodrom\obj\x86\Debug\View\CheckInNaSalteru.xbf
 C:\Users\Lejla\Desktop\New folder\Grupa6-piloti\Projekat\Aerodrom\Aerodrom\obj\x86\Debug\MainPage.xbf
-C:\Users\Lejla\Desktop\New folder\Grupa6-piloti\Projekat\Aerodrom\Aerodrom\obj\x86\Debug\View\RezervacijaKarataNaSalteru.xbf
-C:\Users\Lejla\Desktop\New folder\Grupa6-piloti\Projekat\Aerodrom\Aerodrom\obj\x86\Debug\View\UnosLicnihPodataka.xbf
 C:\Users\Lejla\Desktop\New folder\Grupa6-piloti\Projekat\Aerodrom\Aerodrom\obj\x86\Debug\View\Uprava.xbf
 C:\Users\Lejla\Desktop\New folder\Grupa6-piloti\Projekat\Aerodrom\Aerodrom\obj\x86\Debug\View\AdministratorPanel.xbf
 C:\Users\Lejla\Desktop\New folder\Grupa6-piloti\Projekat\Aerodrom\Aerodrom\obj\x86\Debug\XamlSaveStateFile.xml

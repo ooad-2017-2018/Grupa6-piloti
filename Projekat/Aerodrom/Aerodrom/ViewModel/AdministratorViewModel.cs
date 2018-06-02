@@ -254,6 +254,7 @@ namespace Aerodrom.ViewModel
         }
         public void DodavanjeLinije(object Parametar)
         {
+           
             //Treba u bazu dodati liniju koja se odabrala, njen ID il sta se vec ucitalo je u varijabli odabranaLinijaZaDodat
         }
         public void BrisanjeLinije(object Parametar)
