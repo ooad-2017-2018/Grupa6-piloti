@@ -1,11 +1,6 @@
 App.xbf
 MainPage.xbf
 View\AdministratorPanel.xbf
-View\AviokompanijaAnaliza.xbf
 View\AviokompanijaHome.xbf
-View\AviokompanijaLetDetalji.xbf
-View\AviokompanijaNoviLet.xbf
-View\AviokompanijaZahtjevDetalji.xbf
-View\AviokompanijaZahtjevi.xbf
 View\CheckInNaSalteru.xbf
 View\Uprava.xbf

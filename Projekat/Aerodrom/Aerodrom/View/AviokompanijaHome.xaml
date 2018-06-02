@@ -14,20 +14,19 @@
                 <Grid>
                     <TextBlock HorizontalAlignment="Left" Margin="28,34,0,0" TextWrapping="Wrap" Text="Dobrodosli /naziv aviokompanije/" VerticalAlignment="Top"/>
                     <TextBlock HorizontalAlignment="Left" Margin="28,99,0,0" TextWrapping="Wrap" Text="Vasi registrovani letovi" VerticalAlignment="Top"/>
-                    <Button Content="Odaberi" HorizontalAlignment="Left" Margin="763,500,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.346,0.484" Width="99" Click="Button_Click"/>
-                    <Button Content="Logout" HorizontalAlignment="Left" Margin="1084,500,0,0" VerticalAlignment="Top" Width="90"/>
-                    <ListBox HorizontalAlignment="Left" Height="267" Margin="28,146,0,0" VerticalAlignment="Top" Width="834">
+                    <Button Content="Logout" Command="{Binding Path=Izlaz}" HorizontalAlignment="Left" Margin="1084,500,0,0" VerticalAlignment="Top" Width="90"/>
+                    <ListBox HorizontalAlignment="Left" ItemsSource="{Binding Path=RegistrovaniLetovi}" Height="267" Margin="28,146,0,0" VerticalAlignment="Top" Width="834">
                         <ListBoxItem Content="Let1"/>
                     </ListBox>
                 </Grid>
             </PivotItem>
             <PivotItem Header="Registracija nove linije">
                 <Grid Margin="0,0,0,10">
-                    <Button Content="Provjeri izvodljivost" HorizontalAlignment="Left" Margin="662,294,0,0" VerticalAlignment="Top"/>
-            <Button Content="Posalji zahtjev" HorizontalAlignment="Left" Margin="872,294,0,0" VerticalAlignment="Top"/>
-            <ComboBox HorizontalAlignment="Left" Margin="246,346,0,0" VerticalAlignment="Top" Width="97"/>
-            <ComboBox HorizontalAlignment="Left" Margin="246,406,0,0" VerticalAlignment="Top" Width="97"/>
-            <ComboBox HorizontalAlignment="Left" Margin="246,158,0,0" VerticalAlignment="Top" Width="97"/>
+                    <Button Command="{Binding Path=ProvjeriIzvodljivost}" Content="Provjeri izvodljivost" HorizontalAlignment="Left" Margin="662,294,0,0" VerticalAlignment="Top"/>
+                    <Button Command="{Binding Path=PosaljiZahtjev}" Content="Posalji zahtjev" HorizontalAlignment="Left" Margin="872,294,0,0" VerticalAlignment="Top"/>
+                    <ComboBox ItemsSource="{Binding Path=Dani}" SelectedValue="{Binding Path=OdabraniDan, Mode=TwoWay}" HorizontalAlignment="Left" Margin="246,346,0,0" VerticalAlignment="Top" Width="97"/>
+                    <ComboBox ItemsSource="{Binding Path=Avioni}" SelectedValue="{Binding Path=OdabraniAvion, Mode=TwoWay}" HorizontalAlignment="Left" Margin="246,406,0,0" VerticalAlignment="Top" Width="97"/>
+                    <ComboBox ItemsSource="{Binding Path=TipLeta}" SelectedValue="{Binding Path=OdabraniTip, Mode=TwoWay}" HorizontalAlignment="Left" Margin="246,158,0,0" VerticalAlignment="Top" Width="97"/>
                     <TextBlock HorizontalAlignment="Left" Margin="44,94,0,0" TextWrapping="Wrap" Text="Registrujte novi let:" VerticalAlignment="Top"/>
                     <TextBlock HorizontalAlignment="Left" Margin="44,278,0,0" TextWrapping="Wrap" Text="Vazi od" VerticalAlignment="Top"/>
                     <TextBlock HorizontalAlignment="Left" Margin="43,406,0,0" TextWrapping="Wrap" Text="Tip aviona" VerticalAlignment="Top"/>
@@ -35,23 +34,17 @@
                     <TextBlock HorizontalAlignment="Left" Margin="44,351,0,0" TextWrapping="Wrap" Text="Dan" VerticalAlignment="Top" RenderTransformOrigin="0.639,0.175"/>
                     <TextBlock HorizontalAlignment="Left" Margin="43,158,0,0" TextWrapping="Wrap" Text="Tip leta" VerticalAlignment="Top" Height="32"/>
                     <TextBlock HorizontalAlignment="Left" Margin="662,158,0,0" TextWrapping="Wrap" Text="Ekonomsku klasu" VerticalAlignment="Top"/>
-                    <TextBlock HorizontalAlignment="Left" Margin="43,470,0,0" TextWrapping="Wrap" Text="Oznaka aviona" VerticalAlignment="Top"/>
-                    <TextBlock HorizontalAlignment="Left" Margin="945,110,0,0" TextWrapping="Wrap" Text="Prodano/Ostalo karti" VerticalAlignment="Top" RenderTransformOrigin="1.23,0.731"/>
-                    <TextBlock HorizontalAlignment="Left" Margin="662,217,0,0" TextWrapping="Wrap" Text="Biznis klasu" VerticalAlignment="Top" RenderTransformOrigin="0.483,-0.094"/>
-                    <TextBlock HorizontalAlignment="Left" Margin="44,523,0,0" TextWrapping="Wrap" Text="Cijena aerodromske takse" VerticalAlignment="Top" RenderTransformOrigin="-3.036,0.175"/>
+                    <TextBlock HorizontalAlignment="Left" Margin="44,472,0,0" TextWrapping="Wrap" Text="Cijena aerodromske takse" VerticalAlignment="Top" RenderTransformOrigin="-3.036,0.175"/>
                     <TextBlock HorizontalAlignment="Left" Margin="662,110,0,0" TextWrapping="Wrap" Text="Cijena karte za" VerticalAlignment="Top" RenderTransformOrigin="1.875,-1.094"/>
-                    <TextBox HorizontalAlignment="Left" Margin="246,217,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="97"/>
-                    <TextBox HorizontalAlignment="Left" Margin="246,278,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="97"/>
-                    <TextBox HorizontalAlignment="Left" Margin="246,458,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="97" RenderTransformOrigin="0.946,0.41"/>
-                    <TextBox HorizontalAlignment="Left" Margin="246,523,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="97"/>
-                    <TextBox HorizontalAlignment="Left" Margin="823,158,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top"/>
-                    <TextBox HorizontalAlignment="Left" Margin="823,213,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" RenderTransformOrigin="-0.327,-0.793"/>
-                    <TextBox HorizontalAlignment="Left" Margin="945,158,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top"/>
-                    <TextBox HorizontalAlignment="Left" Margin="945,213,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top"/>
-                    <TextBox HorizontalAlignment="Left" Margin="412,278,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="97"/>
+                    <TextBox HorizontalAlignment="Left" Margin="246,217,0,0" TextWrapping="Wrap" Text="{Binding Path=Destinacija, Mode=TwoWay}" VerticalAlignment="Top" Width="97"/>
+                    <TextBox HorizontalAlignment="Left" Margin="246,278,0,0" TextWrapping="Wrap" Text="{Binding Path=VaziOd, Mode=TwoWay}" VerticalAlignment="Top" Width="97"/>
+                    <TextBox HorizontalAlignment="Left" Margin="246,472,0,0" TextWrapping="Wrap" Text="{Binding Path=CijenaTakse, Mode=TwoWay}" VerticalAlignment="Top" Width="97"/>
+                    <TextBox HorizontalAlignment="Left" Margin="823,158,0,0" TextWrapping="Wrap" Text="{Binding Path=CijenaKarte, Mode=TwoWay}" VerticalAlignment="Top"/>
+                    <TextBox HorizontalAlignment="Left" Margin="412,278,0,0" TextWrapping="Wrap" Text="{Binding Path=VaziDo, Mode=TwoWay}" VerticalAlignment="Top" Width="97"/>
                     <TextBlock HorizontalAlignment="Left" Margin="662,367,0,0" TextWrapping="Wrap" Text="Poruka sistema:" VerticalAlignment="Top" RenderTransformOrigin="-0.722,0.706"/>
                     <TextBlock HorizontalAlignment="Left" Margin="361,282,0,0" TextWrapping="Wrap" Text="do" VerticalAlignment="Top"/>
-                    <RichEditBox HorizontalAlignment="Left" Margin="662,410,0,0" VerticalAlignment="Top" Width="421" Height="204"/>
+                    <TextBlock HorizontalAlignment="Left" Margin="662,426,0,0" TextWrapping="Wrap" Text="{Binding Path=PorukaSistema, Mode=TwoWay}" VerticalAlignment="Top" Height="143" Width="455"/>
+
                 </Grid>
             </PivotItem>
         </Pivot>

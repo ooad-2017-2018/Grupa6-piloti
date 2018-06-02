@@ -36,6 +36,20 @@
     <RootPropertyPathName Name="BrojGateova" />
     <RootPropertyPathName Name="NazivAerodroma" />
     <RootPropertyPathName Name="Izlaz" />
+    <RootPropertyPathName Name="PorukaSistema" />
+    <RootPropertyPathName Name="VaziDo" />
+    <RootPropertyPathName Name="CijenaKarte" />
+    <RootPropertyPathName Name="CijenaTakse" />
+    <RootPropertyPathName Name="VaziOd" />
+    <RootPropertyPathName Name="Destinacija" />
+    <RootPropertyPathName Name="TipLeta" />
+    <RootPropertyPathName Name="OdabraniTip" />
+    <RootPropertyPathName Name="OdabraniAvion" />
+    <RootPropertyPathName Name="Dani" />
+    <RootPropertyPathName Name="OdabraniDan" />
+    <RootPropertyPathName Name="PosaljiZahtjev" />
+    <RootPropertyPathName Name="ProvjeriIzvodljivost" />
+    <RootPropertyPathName Name="RegistrovaniLetovi" />
     <RootPropertyPathName Name="Pretrazi" />
     <RootPropertyPathName Name="PutnikInfo" />
     <RootPropertyPathName Name="PrikazDoplate" />
@@ -43,6 +57,9 @@
     <RootPropertyPathName Name="TezinaPrtljaga" />
     <RootPropertyPathName Name="LicniDokument" />
     <RootPropertyPathName Name="CheckIn" />
+    <RootPropertyPathName Name="Login" />
+    <RootPropertyPathName Name="Lozinka" />
+    <RootPropertyPathName Name="KorisnickoIme" />
     <RootPropertyPathName Name="PrikaziDetaljeLinija" />
     <RootPropertyPathName Name="OdobriZahtjevLinija" />
     <RootPropertyPathName Name="ObrisiZahtjevLinija" />
@@ -120,7 +137,6 @@
       <RootProperty Name="Height" />
       <RootProperty Name="RenderTransformOrigin" />
       <RootProperty Name="FontSize" />
-      <RootEvent Name="Click" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Data.Binding">
       <RootProperty Name="Path" />
@@ -133,7 +149,6 @@
       <RootProperty Name="Text" />
       <RootProperty Name="VerticalAlignment" />
       <RootProperty Name="Width" />
-      <RootProperty Name="RenderTransformOrigin" />
       <RootProperty Name="Height" />
       <RootProperty Name="FontSize" />
       <RootEvent Name="TextChanged" />
@@ -148,28 +163,17 @@
     <RootType FullName="Aerodrom.AdministratorPanel" />
     <RootType FullName="Windows.UI.Xaml.Controls.ListBox">
       <RootProperty Name="HorizontalAlignment" />
+      <RootProperty Name="ItemsSource" />
       <RootProperty Name="Height" />
       <RootProperty Name="Margin" />
       <RootProperty Name="VerticalAlignment" />
       <RootProperty Name="Width" />
       <RootProperty Name="Items" />
     </RootType>
-    <RootType FullName="Aerodrom.AviokompanijaAnaliza" />
     <RootType FullName="Windows.UI.Xaml.Controls.ListBoxItem">
       <RootProperty Name="Content" />
     </RootType>
-    <RootType FullName="Aerodrom.AviokompanijaHome" />
-    <RootType FullName="Windows.UI.Xaml.Controls.RichEditBox">
-      <RootProperty Name="HorizontalAlignment" />
-      <RootProperty Name="Margin" />
-      <RootProperty Name="VerticalAlignment" />
-      <RootProperty Name="Width" />
-      <RootProperty Name="Height" />
-    </RootType>
-    <RootType FullName="Aerodrom.AviokompanijaLetDetalji" />
-    <RootType FullName="Aerodrom.AviokompanijaNoviLet" />
-    <RootType FullName="Aerodrom.AviokompanijaZahtjevDetalji" />
-    <RootType FullName="Aerodrom.AviokompanijaZahtjevi" />
+    <RootType FullName="Aerodrom.View.AviokompanijaHome" />
     <RootType FullName="Windows.UI.Xaml.Controls.RowDefinition">
       <RootProperty Name="Height" />
     </RootType>
