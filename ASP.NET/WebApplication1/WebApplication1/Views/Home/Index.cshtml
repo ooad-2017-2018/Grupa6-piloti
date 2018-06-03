@@ -1,27 +1,111 @@
 ﻿@{
     ViewBag.Title = "Home Page";
 }
-
-<div>
-    <div class="form-horizontal">
-        
-        <h4>Unesite podatke u željenom letu</h4>
-        <hr />
-        <div class="form-group">
-            <label class="control-label col-md-2" for="Destinacija">Odaberite destinaciju</label>
-            <input type="text"> 
-        </div>
-        <div class="form-group">
-            <label class="control-label col-md-2" for="DatumPolaska">Odaberite datum polaksa</label>
-            <input type="datetime-local">
-         </div>
-        
-        <div class="col-md-offset-2 col-md-10">
-            <input type="submit" value="Provjeri dostupnost" class="btn btn-default">
-        </div>
-       
-        
-    </div>
+<style>
+    body {
+        background-image: url("https://i.ytimg.com/vi/1za6gy2zx4s/maxresdefault.jpg");
+        background-repeat: repeat-x;
+        background-size: cover;
+        height: 100%;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    * {
+        box-sizing: border-box;
+    }
 
     
-</div>
+
+    input[type=text], input[type=date] {
+        width: 100%;
+        padding: 15px;
+        margin: 5px 0 22px 0;
+        border: none;
+        background: #f1f1f1;
+    }
+
+        input[type=text]:focus, input[type=date]:focus {
+            background-color: #ddd;
+            outline: none;
+        }
+
+    /* Set a style for the submit button */
+    .btn {
+        background-color: #4CAF50;
+        color: white;
+        padding: 16px 20px;
+        border: none;
+        cursor: pointer;
+        width: 100%;
+        opacity: 0.9;
+    }
+
+        .btn:hover {
+            opacity: 1;
+        }
+    .image {
+        display: block;
+        width: 100%;
+        height: auto;
+               
+    }
+
+    .overlay {
+        position: absolute;
+        bottom: 0;
+        background: rgb(0, 0, 0);
+        background: rgba(0, 0, 0, 0.5); /* Black see-through */
+        color: #f1f1f1;
+        width: 100%;
+        transition: .5s ease;
+        opacity: 0;
+        color: white;
+        font-size: 20px;
+        padding: 20px;
+        text-align: center;
+    }
+
+    .dest {
+        position:relative;
+        width: 50%;
+        max-width: 300px;
+    }
+    .dest:hover .overlay {
+        opacity:1;
+    }
+    .rezervacije {
+        position: absolute;
+        left: 50px;
+        top: 130px;
+        margin: 20px;
+        max-width: 300px;
+        padding: 16px;
+        background-color: transparent;
+    }
+    
+
+</style>
+
+<body>
+
+    
+    <div class="bg-img">
+        <form action="/action_page.php">
+            <div  class="rezervacije">
+                    
+                <h1>Rezervacije</h1>
+
+                <label for="destinacija"><b>Destinacija</b></label>
+                <input type="text" placeholder="Unesite destinaciju" name="destinacija" required>
+
+                <label for="datum"><b>Datum polaska</b></label>
+                <input type="date" placeholder="Unesite datum polaska" name="datum" required>
+
+                <button type="submit" class="btn">Pretraži</button>
+            </div>
+        </form>
+    </div>
+
+
+</body>
+
+
