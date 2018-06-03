@@ -1,0 +1,45 @@
+﻿@model IEnumerable<WebApplication1.Models.Let>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Linija.LinijaId)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Status.Naziv)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.DatumiVrijeme)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.Linija.LinijaId)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Status.Naziv)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.DatumiVrijeme)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.LetId }) |
+            @Html.ActionLink("Details", "Details", new { id=item.LetId }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.LetId })
+        </td>
+    </tr>
+}
+
+</table>

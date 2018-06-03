@@ -1,0 +1,42 @@
+﻿@model WebApplication1.Models.Let
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Let</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Linija.LinijaId)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Linija.LinijaId)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Status.Naziv)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Status.Naziv)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.DatumiVrijeme)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DatumiVrijeme)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.LetId }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

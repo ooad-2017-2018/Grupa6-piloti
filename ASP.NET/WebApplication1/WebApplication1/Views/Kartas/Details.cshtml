@@ -1,0 +1,34 @@
+﻿@model WebApplication1.Models.Karta
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Karta</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Let.LetId)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Let.LetId)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Putnik.Ime)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Putnik.Ime)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.KartaId }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
