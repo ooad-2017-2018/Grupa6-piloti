@@ -23,6 +23,7 @@
     <RootPropertyPathName Name="DodajIzmjeniUpslenika" />
     <RootPropertyPathName Name="DatumRodjenja" />
     <RootPropertyPathName Name="Pozicije" />
+    <RootPropertyPathName Name="SelektovanaPozicija" />
     <RootPropertyPathName Name="Ime" />
     <RootPropertyPathName Name="Telefon" />
     <RootPropertyPathName Name="Plata" />

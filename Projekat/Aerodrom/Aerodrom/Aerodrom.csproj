@@ -100,7 +100,6 @@
     <Compile Include="Model\Aviokompanija.cs" />
     <Compile Include="Model\Avion.cs" />
     <Compile Include="Model\Charter.cs" />
-    <Compile Include="AzureKlase\ConnectionStringAzure.cs" />
     <Compile Include="Model\Karta.cs" />
     <Compile Include="Model\Let.cs" />
     <Compile Include="Model\LetRedovni.cs" />
@@ -183,6 +182,9 @@
   </ItemGroup>
   <ItemGroup>
     <WCFMetadata Include="Connected Services\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="AzureKlase\" />
   </ItemGroup>
   <PropertyGroup Condition=" '$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '14.0' ">
     <VisualStudioVersion>14.0</VisualStudioVersion>

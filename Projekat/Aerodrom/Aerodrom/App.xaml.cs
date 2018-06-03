@@ -25,8 +25,7 @@ namespace Aerodrom
     {
 
         
-        public static MobileServiceClient MobileService = new MobileServiceClient("https://aerodrompiloti.azurewebsites.net");
-        private string konekcija = "Data Source=tcp:aerodrompilotiserver.database.windows.net,1433;Initial Catalog=Aerodrom;User ID=aerodromadmin;Password=Admin123;";
+        public static MobileServiceClient MobileService = new MobileServiceClient("https://OOAD-Aerodrom.azurewebsites.net");
         /// <summary>
         /// Initializes the singleton application object.  This is the first line of authored code
         /// executed, and as such is the logical equivalent of main() or WinMain().
@@ -37,8 +36,6 @@ namespace Aerodrom
             this.Suspending += OnSuspending;
             Globalna g = new Globalna();
         }
-
-        public string Konekcija { get => konekcija; set => konekcija = value; }
 
         /// <summary>
         /// Invoked when the application is launched normally by the end user.  Other entry points

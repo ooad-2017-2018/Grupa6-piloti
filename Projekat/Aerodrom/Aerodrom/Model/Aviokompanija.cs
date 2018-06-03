@@ -8,9 +8,8 @@ namespace Aerodrom.Model
 {
     public class Aviokompanija
     {
-        static int globalID = 0;
 
-        private int id;
+        private string id;
         private string naziv;
         private string kontaktOsoba;
         private string telefon;
@@ -20,14 +19,13 @@ namespace Aerodrom.Model
         public Aviokompanija() { }
         public Aviokompanija(string naziv, string kontaktOsoba, string telefon, string email)
         {
-            this.Id = globalID++;
             this.Naziv = naziv;
             this.KontaktOsoba = kontaktOsoba;
             this.Telefon = telefon;
             this.Email = email;
         }
 
-        public int Id { get => id; set => id = value; }
+        public string Id { get => id; set => id = value; }
         public string Naziv { get => naziv; set => naziv = value; }
         public string KontaktOsoba { get => kontaktOsoba; set => kontaktOsoba = value; }
         public string Telefon { get => telefon; set => telefon = value; }
