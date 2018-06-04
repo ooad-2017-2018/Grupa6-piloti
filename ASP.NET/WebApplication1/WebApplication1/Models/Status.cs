@@ -11,6 +11,7 @@ namespace WebApplication1.Models
         [ScaffoldColumn(false)]
         public int StatusId { get; set; }
         [Required(ErrorMessage = "Polje naziva statusa je obavezno")]
+        [Display(Name ="Status")]
         public string Naziv { get; set; }
 
         public virtual ICollection<Let> Letovi { get; set; }

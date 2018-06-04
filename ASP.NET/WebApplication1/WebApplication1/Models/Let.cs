@@ -8,7 +8,7 @@ namespace WebApplication1.Models
 {
     public class Let
     {
-        [ScaffoldColumn(false)]
+       
         public int LetId { get; set; }
         [Required]
         [Display(Name ="Datum i vrijeme polaska")]
