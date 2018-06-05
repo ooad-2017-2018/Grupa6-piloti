@@ -1,0 +1,62 @@
+﻿@model WebApplication1.Models.Zahtjev
+
+@{
+    ViewBag.Title = "Create";
+}
+
+<h2>Slanje zahtjeva za odgodu leta</h2>
+
+@using (Html.BeginForm()) 
+{
+    @Html.AntiForgeryToken()
+    
+    <div class="form-horizontal">
+        <h4>Zahtjev</h4>
+        <hr />
+        @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+        <div class="form-group">
+            @Html.LabelFor(model => model.LetId, "LetId", htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.DropDownList("LetId", null, htmlAttributes: new { @class = "form-control" })
+                @Html.ValidationMessageFor(model => model.LetId, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.Razlog, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.Razlog, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.Razlog, "", new { @class = "text-danger" })
+            </div>
+        </div>       
+
+        <div class="form-group">
+            <div class="col-md-offset-2 col-md-10">
+                <input type="submit" value="Pošalji" class="btn btn-default" />
+            </div>
+        </div>
+    </div>
+}
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}
+
+<a href="https://www.accuweather.com/bs/ba/sarajevo/33028/current-weather/33028" class="aw-widget-legal">
+
+
+</a>
+<div style="resize:both;"
+     id="awtd1528075058806"
+     class="aw-widget-36hour"
+     data-locationkey="33028"
+     data-unit="c"
+     data-language="bs"
+     data-useip="false"
+     data-uid="awtd1528075058806"
+     data-editlocation="false">
+
+</div>
+<script type="text/javascript" src="https://oap.accuweather.com/launch.js">
+
+</script>

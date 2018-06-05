@@ -1,0 +1,66 @@
+﻿@model WebApplication1.Models.Linija
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Linija</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Aviokompanija.Naziv)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Aviokompanija.Naziv)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Dan.Naziv)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Dan.Naziv)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Destinacija.Naziv)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Destinacija.Naziv)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.VrijemePolaska)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.VrijemePolaska)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TrajanjeLeta)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TrajanjeLeta)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Cijena)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Cijena)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.LinijaId }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

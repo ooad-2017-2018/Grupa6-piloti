@@ -93,6 +93,10 @@
     <None Include="project.json" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Globalna.cs" />
+    <Compile Include="Helper\INavigationService.cs" />
+    <Compile Include="Helper\NavigationService.cs" />
+    <Compile Include="Helper\RelayCommand.cs" />
     <Compile Include="Model\Aviokompanija.cs" />
     <Compile Include="Model\Avion.cs" />
     <Compile Include="Model\Charter.cs" />
@@ -108,6 +112,11 @@
     <Compile Include="Model\Zahtjev.cs" />
     <Compile Include="Model\ZahtjevNovaLinija.cs" />
     <Compile Include="Model\ZahtjevOdgoda.cs" />
+    <Compile Include="ViewModel\AdministratorViewModel.cs" />
+    <Compile Include="ViewModel\AviokompanijaViewModel.cs" />
+    <Compile Include="ViewModel\CheckInViewModel.cs" />
+    <Compile Include="ViewModel\LoginViewModel.cs" />
+    <Compile Include="ViewModel\UpravaViewModel.cs" />
     <Compile Include="View\AdministratorPanel.xaml.cs">
       <DependentUpon>AdministratorPanel.xaml</DependentUpon>
     </Compile>
@@ -115,49 +124,16 @@
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
-    <Compile Include="View\AviokompanijaAnaliza.xaml.cs">
-      <DependentUpon>AviokompanijaAnaliza.xaml</DependentUpon>
-    </Compile>
     <Compile Include="View\AviokompanijaHome.xaml.cs">
       <DependentUpon>AviokompanijaHome.xaml</DependentUpon>
     </Compile>
-    <Compile Include="View\AviokompanijaLetDetalji.xaml.cs">
-      <DependentUpon>AviokompanijaLetDetalji.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="View\AviokompanijaNoviLet.xaml.cs">
-      <DependentUpon>AviokompanijaNoviLet.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="View\AviokompanijaZahtjevDetalji.xaml.cs">
-      <DependentUpon>AviokompanijaZahtjevDetalji.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="View\AviokompanijaZahtjevi.xaml.cs">
-      <DependentUpon>AviokompanijaZahtjevi.xaml</DependentUpon>
-    </Compile>
     <Compile Include="View\CheckInNaSalteru.xaml.cs">
       <DependentUpon>CheckInNaSalteru.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="View\DodavanjeBrisanjeAviokompanija.xaml.cs">
-      <DependentUpon>DodavanjeBrisanjeAviokompanija.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="View\DodavanjeBrisanjeLinija.xaml.cs">
-      <DependentUpon>DodavanjeBrisanjeLinija.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="View\DodavanjeBrisanjeUposlenika.xaml.cs">
-      <DependentUpon>DodavanjeBrisanjeUposlenika.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="View\InformacijeAerodrom.xaml.cs">
-      <DependentUpon>InformacijeAerodrom.xaml</DependentUpon>
     </Compile>
     <Compile Include="MainPage.xaml.cs">
       <DependentUpon>MainPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="View\RezervacijaKarataNaSalteru.xaml.cs">
-      <DependentUpon>RezervacijaKarataNaSalteru.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="View\UnosLicnihPodataka.xaml.cs">
-      <DependentUpon>UnosLicnihPodataka.xaml</DependentUpon>
-    </Compile>
     <Compile Include="View\Uprava.xaml.cs">
       <DependentUpon>Uprava.xaml</DependentUpon>
     </Compile>
@@ -187,27 +163,7 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="View\AviokompanijaAnaliza.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
     <Page Include="View\AviokompanijaHome.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="View\AviokompanijaLetDetalji.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="View\AviokompanijaNoviLet.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="View\AviokompanijaZahtjevDetalji.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="View\AviokompanijaZahtjevi.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -215,38 +171,20 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="View\DodavanjeBrisanjeAviokompanija.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="View\DodavanjeBrisanjeLinija.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="View\DodavanjeBrisanjeUposlenika.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="View\InformacijeAerodrom.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
     <Page Include="MainPage.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
-    </Page>
-    <Page Include="View\RezervacijaKarataNaSalteru.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="View\UnosLicnihPodataka.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="View\Uprava.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="AzureKlase\" />
   </ItemGroup>
   <PropertyGroup Condition=" '$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '14.0' ">
     <VisualStudioVersion>14.0</VisualStudioVersion>

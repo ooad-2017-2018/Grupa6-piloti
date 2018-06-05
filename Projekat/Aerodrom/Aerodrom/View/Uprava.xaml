@@ -9,35 +9,27 @@
 
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
         <Pivot Title="Uprava">
-            <PivotItem Header="Analiza">
-                <Grid>
-                    <TextBlock x:Name="textBlock" HorizontalAlignment="Left" Margin="64,63,0,0" TextWrapping="Wrap" Text="Analiziraj sadržaj u periodu od:" VerticalAlignment="Top" Height="22" Width="296" FontSize="20"/>
-                    <TextBlock x:Name="textBlock1" HorizontalAlignment="Left" Margin="64,195,0,0" TextWrapping="Wrap" Text="Do:" VerticalAlignment="Top" FontSize="20"/>
-                    <DatePicker HorizontalAlignment="Left" Margin="64,115,0,0" VerticalAlignment="Top"/>
-                    <DatePicker HorizontalAlignment="Left" Margin="64,267,0,0" VerticalAlignment="Top"/>
-                    <Button x:Name="button" Content="Analiziraj" HorizontalAlignment="Left" Margin="64,395,0,0" VerticalAlignment="Top" Height="44" Width="138" FontSize="20"/>
-                    <TextBlock x:Name="textBlock2" HorizontalAlignment="Left" Margin="730,58,0,0" TextWrapping="Wrap" Text="Analiza sadržaja: " VerticalAlignment="Top" FontSize="20"/>
-                    <TextBlock x:Name="textBlock3" HorizontalAlignment="Left" Margin="730,123,0,0" TextWrapping="Wrap" Text="*Analiza*" VerticalAlignment="Top" Height="342" Width="334" FontSize="20"/>
-                </Grid>
-            </PivotItem>
             <PivotItem Header="Odgoda leta">
                 <Grid>
-                    <TextBlock x:Name="textBlock41" HorizontalAlignment="Left" Margin="80,53,0,0" TextWrapping="Wrap" Text="Svi trenutni zahtjevi za odgodu leta:" VerticalAlignment="Top" Height="42" Width="330" FontSize="20"/>
-                    <ListBox x:Name="listBox1" HorizontalAlignment="Left" Height="340" Margin="80,135,0,0" VerticalAlignment="Top" Width="330"/>
-                    <TextBlock x:Name="textBlock51" HorizontalAlignment="Left" Margin="658,53,0,0" TextWrapping="Wrap" Text="Detalji zahtjeva:" VerticalAlignment="Top" Height="30" Width="248" FontSize="20"/>
-                    <TextBlock x:Name="textBlock61" HorizontalAlignment="Left" Margin="658,135,0,0" TextWrapping="Wrap" Text="*Detalji odgode*" VerticalAlignment="Top" Height="196" Width="399" FontSize="20"/>
-                    <Button x:Name="button11" Content="Obriši zahtjev" HorizontalAlignment="Left" Margin="658,427,0,0" VerticalAlignment="Top" Height="48" Width="167" FontSize="20"/>
-                    <Button x:Name="button22" Content="Odobri zahtjev" HorizontalAlignment="Left" Margin="890,427,0,0" VerticalAlignment="Top" Height="48" Width="167" FontSize="20"/>
+                    <ComboBox Margin="80,100,0,0" Width="318" Height="53" ItemsSource="{Binding Path=ZahtjeviOdgoda}" SelectedValue="{Binding Path=OdabraniZahtjev, Mode=TwoWay}"></ComboBox>
+                    <TextBlock x:Name="textBlock416" HorizontalAlignment="Left" Margin="80,53,0,0" TextWrapping="Wrap" Text="Svi trenutni zahtjevi za odgodu leta:" VerticalAlignment="Top" Height="42" Width="330" FontSize="20"/>
+                    <TextBlock x:Name="textBlock516" HorizontalAlignment="Left" Margin="80,239,0,0" TextWrapping="Wrap" Text="{Binding Path=DetaljiZahtjeva, Mode=TwoWay}" VerticalAlignment="Top" Height="30" Width="318" FontSize="20"/>
+                    <TextBlock x:Name="textBlock616" HorizontalAlignment="Left" Margin="658,73,0,0" TextWrapping="Wrap" Text="{Binding Path=DetaljiZahtjeva, Mode=TwoWay}" VerticalAlignment="Top" Height="196" Width="399" FontSize="20"/>
+                    <Button x:Name="button161" Command="{Binding Path=ObrisiZahtjev}" Content="Obriši zahtjev" HorizontalAlignment="Left" Margin="658,427,0,0" VerticalAlignment="Top" Height="48" Width="167" FontSize="20"/>
+                    <Button x:Name="button226" Content="Odobri zahtjev" Command="{Binding Path=OdobriZahtjev}" HorizontalAlignment="Left" Margin="890,427,0,0" VerticalAlignment="Top" Height="48" Width="167" FontSize="20"/>
+                    <Button x:Name="button116_Copy" Content="Izlaz" Command="{Binding Path=Izlaz}" HorizontalAlignment="Left" Margin="771,520,0,0" VerticalAlignment="Top" Height="48" Width="167" FontSize="20"/>
+                    <Button x:Name="button116_Copy1" Command="{Binding Path=PrikaziDetalje}" Content="Prikaži detalje" HorizontalAlignment="Left" Margin="432,100,0,0" VerticalAlignment="Top" Height="48" Width="167" FontSize="20"/>
                 </Grid>
             </PivotItem>
             <PivotItem Header="Nove linije">
                 <Grid>
-                    <TextBlock x:Name="textBlock4" HorizontalAlignment="Left" Margin="80,53,0,0" TextWrapping="Wrap" Text="Svi trenutni zahtjevi za nove linije:" VerticalAlignment="Top" Height="22" Width="186" FontSize="20"/>
-                    <TextBlock x:Name="textBlock5" HorizontalAlignment="Left" Margin="630,135,0,0" TextWrapping="Wrap" Text="*Detalji*" VerticalAlignment="Top" Height="250" Width="309" FontSize="20"/>
-                    <ListBox x:Name="listBox" HorizontalAlignment="Left" Height="340" Margin="80,135,0,0" VerticalAlignment="Top" Width="330"/>
-                    <Button x:Name="button1" Content="Odobri zahtjev" HorizontalAlignment="Left" Margin="874,419,0,0" VerticalAlignment="Top" Height="44" Width="147"/>
-                    <Button x:Name="button2" Content="Obriši zahtjev" HorizontalAlignment="Left" Margin="630,419,0,0" VerticalAlignment="Top" Height="44" Width="155"/>
-                    <TextBlock x:Name="textBlock7" HorizontalAlignment="Left" Margin="630,53,0,0" TextWrapping="Wrap" Text="Detalji nove linije:" VerticalAlignment="Top" FontSize="20"/>
+                    <ComboBox Margin="80,100,0,0" Width="318" Height="53" ItemsSource="{Binding Path=ZahtjeviLinije}" SelectedValue="{Binding Path=OdabraniZahtjevLinija, Mode=TwoWay}"></ComboBox>
+                    <TextBlock x:Name="textBlock411" HorizontalAlignment="Left" Margin="80,53,0,0" TextWrapping="Wrap" Text="Trenutni zahtjevi za novu liniju:" VerticalAlignment="Top" Height="42" Width="330" FontSize="20"/>
+                    <TextBlock x:Name="textBlock511" HorizontalAlignment="Left" Margin="80,239,0,0" TextWrapping="Wrap" Text="{Binding Path=DetaljiZahtjevaLinija, Mode=TwoWay}" VerticalAlignment="Top" Height="30" Width="318" FontSize="20"/>
+                    <TextBlock x:Name="textBlock611" HorizontalAlignment="Left" Margin="658,73,0,0" TextWrapping="Wrap" Text="{Binding Path=DetaljiZahtjevaLinija, Mode=TwoWay}" VerticalAlignment="Top" Height="196" Width="399" FontSize="20"/>
+                    <Button x:Name="button111" Command="{Binding Path=ObrisiZahtjevLinija}" Content="Obriši zahtjev" HorizontalAlignment="Left" Margin="658,427,0,0" VerticalAlignment="Top" Height="48" Width="167" FontSize="20"/>
+                    <Button x:Name="button221" Content="Odobri zahtjev" Command="{Binding Path=OdobriZahtjevLinija}" HorizontalAlignment="Left" Margin="890,427,0,0" VerticalAlignment="Top" Height="48" Width="167" FontSize="20"/>
+                    <Button x:Name="button111_Copy1" Command="{Binding Path=PrikaziDetaljeLinija}" Content="Prikaži detalje" HorizontalAlignment="Left" Margin="432,100,0,0" VerticalAlignment="Top" Height="48" Width="167" FontSize="20"/>
 
                 </Grid>
             </PivotItem>

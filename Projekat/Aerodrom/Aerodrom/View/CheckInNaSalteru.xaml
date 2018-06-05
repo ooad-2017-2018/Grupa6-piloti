@@ -14,9 +14,10 @@
             <RowDefinition Height="0*"/>
         </Grid.RowDefinitions>
         <RelativePanel MinHeight="300" Margin="0,0,0,248" Grid.RowSpan="2">
-            <Button x:Name="button1" Content="Unesi" HorizontalAlignment="Left" Margin="1182,67,-1300,-118" VerticalAlignment="Top" RenderTransformOrigin="0.554,0.469" Height="51" FontSize="20" Width="118"/>
+            <Button x:Name="button1" Command="{Binding Path=CheckIn}" Content="Check in" HorizontalAlignment="Left" Margin="589,427,-736,-473" VerticalAlignment="Top" RenderTransformOrigin="0.554,0.469" Height="46" FontSize="20" Width="147"/>
             <TextBlock x:Name="textBlock1" HorizontalAlignment="Left" Margin="58,199,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="446" Height="27" SelectionChanged="textBlock1_SelectionChanged" FontSize="20">
             <Run Text="Informacija o putniku: "/>
+             
             <LineBreak/>
             <Run/>
             </TextBlock>
@@ -25,36 +26,29 @@
             <Run Text="putnika"/>
             <Run Text=":"/>
             </TextBlock>
-            <TextBox x:Name="textBox" HorizontalAlignment="Left" Margin="532,70,0,0" TextWrapping="Wrap" Text="&#xD;&#xA;" VerticalAlignment="Top" Width="389" Height="57" FontSize="20"/>
-            <Button x:Name="button" Content="Check In" Grid.Column="0" Grid.Row="3" Margin="0,718,-1300,-780" Height="62" Width="219" Click="button_Click" FontSize="20" HorizontalAlignment="Right"/>
-            <TextBlock x:Name="textBlock2" HorizontalAlignment="Left" Margin="697,205,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="269" SelectionChanged="textBlock2_SelectionChanged" Height="37">
-            <Run FontSize="20" Text="Ima li putnik prtljag"/>
-            <Run FontSize="20" Text="?"/>
-            <LineBreak/>
-            <Run/>
-            </TextBlock>
-            <RadioButton x:Name="radioButton" Content="Da" HorizontalAlignment="Left" Margin="1015,203,0,0" VerticalAlignment="Top" FontSize="18" Checked="radioButton_Checked" Height="43" Width="129"/>
-            <RadioButton x:Name="radioButton1" Content="Ne" HorizontalAlignment="Left" Margin="1150,200,0,0" VerticalAlignment="Top" Checked="radioButton1_Checked" FontSize="18" Height="44" Width="129"/>
-            <TextBlock x:Name="textBlock3" HorizontalAlignment="Left" Margin="697,305,0,0" TextWrapping="Wrap" Text="Unesite težinu prtljaga:" VerticalAlignment="Top" Width="269" SelectionChanged="textBlock3_SelectionChanged" FontSize="20" Height="37"/>
-            <TextBox x:Name="textBox1" HorizontalAlignment="Left" Margin="1015,298,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="102" TextChanged="textBox1_TextChanged" FontSize="20" Height="54"/>
-            <TextBlock x:Name="textBlock4" HorizontalAlignment="Left" Margin="1182,305,0,0" TextWrapping="Wrap" Text="Kg" VerticalAlignment="Top" SelectionChanged="textBlock4_SelectionChanged" FontSize="20" Width="58" Height="37"/>
-            <Button x:Name="button2" Content="Unesi" HorizontalAlignment="Right" Margin="0,396,-1240,-11.667" VerticalAlignment="Top" Height="55" Width="147" FontSize="20"/>
-            <TextBlock x:Name="textBlock5" HorizontalAlignment="Left" Margin="692.994,519.002,0,0" TextWrapping="Wrap" Text="Iznos za doplatu:" VerticalAlignment="Top" SelectionChanged="textBlock5_SelectionChanged" FontSize="20" Width="294.623" Height="66.995" RenderTransformOrigin="0.5,0.5" UseLayoutRounding="False" d:LayoutRounding="Auto">
+            <TextBox x:Name="textBox" HorizontalAlignment="Left" Margin="532,70,0,0" TextWrapping="Wrap" Text="{Binding Path=LicniDokument, Mode=TwoWay}" VerticalAlignment="Top" Width="389" Height="57" FontSize="20"/>
+            <TextBlock x:Name="textBlock3" HorizontalAlignment="Left" Margin="511,209,0,0" TextWrapping="Wrap" Text="Unesite težinu prtljaga:" VerticalAlignment="Top" Width="269" SelectionChanged="textBlock3_SelectionChanged" FontSize="20" Height="37"/>
+            <TextBox x:Name="textBox1" HorizontalAlignment="Left" Margin="829,202,0,0" TextWrapping="Wrap" Text="{Binding Path=TezinaPrtljaga, Mode=TwoWay}" VerticalAlignment="Top" Width="102" TextChanged="textBox1_TextChanged" FontSize="20" Height="54"/>
+            <TextBlock x:Name="textBlock4" HorizontalAlignment="Left" Margin="996,209,0,0" TextWrapping="Wrap" Text="Kg" VerticalAlignment="Top" SelectionChanged="textBlock4_SelectionChanged" FontSize="20" Width="58" Height="37"/>
+            <Button x:Name="button2" Command="{Binding Path=ProvjeriPrtljag}" Content="Provjeri prtljag" HorizontalAlignment="Right" Margin="0,209,-1240,0" VerticalAlignment="Top" Height="55" Width="147" FontSize="20"/>
+            <TextBlock x:Name="textBlock5" HorizontalAlignment="Left" Margin="515.994,316.502,0,0" TextWrapping="Wrap" Text="Iznos za doplatu:" VerticalAlignment="Top" SelectionChanged="textBlock5_SelectionChanged" FontSize="20" Width="294.623" Height="66.995" RenderTransformOrigin="0.5,0.5" UseLayoutRounding="False" d:LayoutRounding="Auto">
                 <TextBlock.RenderTransform>
                     <CompositeTransform Rotation="0.065" TranslateY="-0.088"/>
                 </TextBlock.RenderTransform>
             </TextBlock>
-            <TextBlock x:Name="textBlock6" HorizontalAlignment="Left" Margin="1013.853,519.003,0,0" TextWrapping="Wrap" Text="Iznos" VerticalAlignment="Top" FontSize="20" Foreground="#FFE62A2A" Height="31.735" Width="46.413" RenderTransformOrigin="0.5,0.5" UseLayoutRounding="False" d:LayoutRounding="Auto">
+            <TextBlock x:Name="textBlock6" HorizontalAlignment="Left" Margin="775.353,316.503,0,0" TextWrapping="Wrap" Text="{Binding Path=PrikazDoplate, Mode=TwoWay}" VerticalAlignment="Top" FontSize="20" Foreground="#FFE62A2A" Height="31.735" Width="46.413" RenderTransformOrigin="0.5,0.5" UseLayoutRounding="False" d:LayoutRounding="Auto">
                 <TextBlock.RenderTransform>
                     <CompositeTransform Rotation="0.065" TranslateX="0.017" TranslateY="0.133"/>
                 </TextBlock.RenderTransform>
             </TextBlock>
-            <TextBlock x:Name="textBlock7" HorizontalAlignment="Left" Margin="1113.739,519.004,0,0" TextWrapping="Wrap" Text="KM" VerticalAlignment="Top" FontSize="20" Height="31.735" Width="30.27" RenderTransformOrigin="0.5,0.5" UseLayoutRounding="False" d:LayoutRounding="Auto">
+            <TextBlock x:Name="textBlock7" HorizontalAlignment="Left" Margin="855.739,316.504,0,0" TextWrapping="Wrap" Text="KM" VerticalAlignment="Top" FontSize="20" Height="31.735" Width="30.27" RenderTransformOrigin="-8.454,-3.803" UseLayoutRounding="False" d:LayoutRounding="Auto">
                 <TextBlock.RenderTransform>
-                    <CompositeTransform Rotation="0.065" TranslateX="0.017" TranslateY="0.236"/>
+                    <CompositeTransform Rotation="0.065" TranslateX="0.173" TranslateY="-0.074"/>
                 </TextBlock.RenderTransform>
             </TextBlock>
-            <TextBlock x:Name="textBlock8" HorizontalAlignment="Left" Height="498" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="411" Margin="58,282,-407,-760"/>
+            <TextBlock x:Name="textBlock1_Copy" HorizontalAlignment="Left" Margin="58,246,0,-47" TextWrapping="Wrap" VerticalAlignment="Top" Width="446" Height="27" SelectionChanged="textBlock1_SelectionChanged" FontSize="20" Text="{Binding Path=PutnikInfo, Mode=TwoWay}"/>
+            <Button x:Name="button1_Copy"  Content="Izlaz" HorizontalAlignment="Left" Margin="1093,322,-1240,-373" VerticalAlignment="Top" RenderTransformOrigin="0.331,0.279" Height="51" FontSize="20" Width="147" Command="{Binding Path=Izlaz}"/>
+            <Button x:Name="button1_Copy1" Command="{Binding Path=Pretrazi}" Content="Pretraži" HorizontalAlignment="Left" Margin="1093,69,-1240,-115" VerticalAlignment="Top" RenderTransformOrigin="0.554,0.469" Height="46" FontSize="20" Width="147"/>
 
         </RelativePanel>
     </Grid>

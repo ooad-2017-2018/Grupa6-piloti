@@ -1,0 +1,101 @@
+﻿@{
+    ViewBag.Title = "Gradovi u koje je moguće direktno letjeti";
+}
+<h2>@ViewBag.Title.</h2>
+<h3>@ViewBag.Message</h3>
+
+
+
+<body>
+    <div>
+        &nbsp;
+        <style>
+            #map {
+                height: 600px;
+                width: 1000px;
+            }
+            body {
+                background-image: url("https://img00.deviantart.net/a3e4/i/2011/072/1/e/sunset_sky_2_by_manichysteriastock-d3bjiec.jpg");
+                background-repeat: repeat-x;
+                background-size: cover;
+            }
+        </style>
+
+        <div class="row">
+            <div id="map"></div>
+            <script>
+                var map;
+                function initMap() {
+                    map = new google.maps.Map(document.getElementById('map'), {
+                        center: { lat: 43.826882, lng: 18.336801 },
+                        zoom: 4
+                    });
+                    var marker = new google.maps.Marker({
+                        position: { lat: 43.826882, lng: 18.336801 },
+                        map: map
+                    });
+                    var marker = new google.maps.Marker({
+                        position: { lat: 45.740750, lng: 16.067437 },
+                        map: map
+                    });
+                    var marker = new google.maps.Marker({
+                        position: { lat: 44.820498, lng: 20.291691 },
+                        map: map
+                    });
+                    var marker = new google.maps.Marker({
+                        position: { lat: 40.982989, lng: 28.810443 },
+                        map: map
+                    });
+
+                    var marker = new google.maps.Marker({
+                        position: { lat: 52.558833, lng: 13.288437 },
+                        map: map
+                    });
+                    var marker = new google.maps.Marker({
+                        position: { lat: 41.963161, lng: 21.622353 },
+                        map: map
+                    });
+                    var marker = new google.maps.Marker({
+                        position: { lat: 49.009691, lng: 2.547925 },
+                        map: map
+                    });
+                    var marker = new google.maps.Marker({
+                        position: { lat: 47.438459, lng: 19.252296 },
+                        map: map
+                    });
+                    var marker = new google.maps.Marker({
+                        position: { lat: 41.799887, lng: 12.246238 },
+                        map: map
+                    });
+                    var marker = new google.maps.Marker({
+                        position: { lat: 25.253175, lng: 55.3656738 },
+                        map: map
+                    });
+                    var marker = new google.maps.Marker({
+                        position: { lat: 25.260595, lng: 51.613766 },
+                        map: map
+                    });
+                    var marker = new google.maps.Marker({
+                        position: { lat: 40.498332, lng: -3.567598 },
+                        map: map
+                    });
+                    var marker = new google.maps.Marker({
+                        position: { lat: 46.225943, lng: 14.455914 },
+                        map: map
+                    });
+                    var marker = new google.maps.Marker({
+                        position: { lat: 43.538439, lng: 16.298338 },
+                        map: map
+                    });
+
+                }
+            </script>
+            <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCl53wElLILBsIZiXn3u_xu7PMPyyU44Fg&callback=initMap"
+                    async defer></script>
+        </div>
+        <br /> <br />
+    </div>
+</body>
+
+
+

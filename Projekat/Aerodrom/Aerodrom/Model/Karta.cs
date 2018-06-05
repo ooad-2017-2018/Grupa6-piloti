@@ -16,14 +16,16 @@ namespace Aerodrom.Model
         Let dolazak;
         double ukupnaCijena;
         Putnik putnik;
+        bool prijavljen = false;
 
-        public Karta(Let polazak, Let dolazak, double ukupnaCijena, Putnik putnik)
+        public Karta(Let polazak, Let dolazak, double ukupnaCijena, Putnik putnik, bool prijavljen)
         {
             this.Id = globalID++;
             this.Polazak = polazak;
             this.Dolazak = dolazak;
             this.UkupnaCijena = ukupnaCijena;
             this.Putnik = putnik;
+            this.Prijavljen = prijavljen;
         }
 
         public int Id { get => id; set => id = value; }
@@ -31,5 +33,6 @@ namespace Aerodrom.Model
         public Let Dolazak { get => dolazak; set => dolazak = value; }
         public double UkupnaCijena { get => ukupnaCijena; set => ukupnaCijena = value; }
         public Putnik Putnik { get => putnik; set => putnik = value; }
+        public bool Prijavljen { get => prijavljen; set => prijavljen = value; }
     }
 }

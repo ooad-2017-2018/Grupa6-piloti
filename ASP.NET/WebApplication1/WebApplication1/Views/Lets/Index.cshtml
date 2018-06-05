@@ -1,0 +1,54 @@
+﻿@model IEnumerable<WebApplication1.Models.Let>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<style>
+    body {
+        background-image: url("https://d2v9y0dukr6mq2.cloudfront.net/video/thumbnail/HvKr3JLuir4m1t3a/the-international-airport-in-prague-airport-departures-board-flight-schedule-screens_bnzd-vkle_thumbnail-full01.png");
+        background-size:cover;
+        
+    }
+</style>
+
+<h2 style="color:white;">Lista letova</h2>
+<body>
+    
+    <table class="table" style="background-color:white;">
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Linija.Destinacija)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Status.Naziv)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.DatumiVrijeme)
+            </th>
+            <th></th>
+        </tr>
+
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Linija.Destinacija)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Status.Naziv)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.DatumiVrijeme)
+                </td>
+                <td>
+                    @Html.ActionLink("Edit", "Edit", new { id = item.LetId }) |
+                    @Html.ActionLink("Details", "Details", new { id = item.LetId }) |
+                    @Html.ActionLink("Delete", "Delete", new { id = item.LetId })
+                </td>
+            </tr>
+        }
+
+    </table>
+
+</body>

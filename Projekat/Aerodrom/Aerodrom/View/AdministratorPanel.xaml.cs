@@ -12,6 +12,7 @@ using Windows.UI.Xaml.Data;
 using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
+using Aerodrom.ViewModel;
 
 // The Blank Page item template is documented at https://go.microsoft.com/fwlink/?LinkId=234238
 
@@ -25,36 +26,12 @@ namespace Aerodrom
         public AdministratorPanel()
         {
             this.InitializeComponent();
+            DataContext = new AdministratorViewModel();
+            
         }
 
-        private void Button_Click(object sender, RoutedEventArgs e)
-        {
-            Frame.Navigate(typeof(AdministratorPanel));
-        }
+        
 
-        private void Button_Click_1(object sender, RoutedEventArgs e)
-        {
-            Frame.Navigate(typeof(DodavanjeBrisanjeUposlenika));
-        }
-
-        private void Button_Click_2(object sender, RoutedEventArgs e)
-        {
-            Frame.Navigate(typeof(DodavanjeBrisanjeAviokompanija));
-        }
-
-        private void Button_Click_3(object sender, RoutedEventArgs e)
-        {
-            Frame.Navigate(typeof(DodavanjeBrisanjeLinija));
-        }
-
-        private void Button_Click_4(object sender, RoutedEventArgs e)
-        {
-            Frame.Navigate(typeof(InformacijeAerodrom));
-        }
-
-        private void Button_Click_5(object sender, RoutedEventArgs e)
-        {
-            Application.Current.Exit();
-        }
+       
     }
 }
