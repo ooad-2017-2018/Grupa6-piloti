@@ -9,41 +9,123 @@ namespace Aerodrom.Model
     public enum Dan{Ponedeljak, Utorak, Srijeda, Cetvrtak, Petak, Subota, Nedelja};
     public class Linija
     {
+        private string id;
         private string brojLinije;
         private string destinacija;
-        private Aviokompanija aviokompanija;
-        private Avion avion;
+        private string idAviokompanije;//mozemo kasnije da drzi aviokompaniju, pa preko setera staviti da se u tabeli drzi id
+        private string idAviona;//-||-
         private double prosjecnoTrajanje;
         private double cijena;
         private List<Dan> daniDolazaka = new List<Dan>();
         private List<Dan> daniOdlazaka = new List<Dan>();
-        private DateTime vrijemeDolazaka;
-        private DateTime vrijemeOdlazaka;
+        private string daniDolazakaString;
+        private string daniOdlazakaString;
+        private string vrijemeDolazaka;//-||-
+        private string vrijemeOdlazaka;//-||-
+        private bool postojeca;
 
         public Linija() { }
-        public Linija(string brojLinije, string destinacija, Aviokompanija aviokompanija, Avion avion, double prosjecnoTrajanje, double cijena, List<Dan> daniDolazaka, List<Dan> daniOdlazaka, DateTime vrijemeDolazaka, DateTime vrijemeOdlazaka)
+        public Linija(string brojLinije, string destinacija, string idAviokompanije, string idAviona, double prosjecnoTrajanje, double cijena, List<Dan> daniDolazaka, List<Dan> daniOdlazaka, string vrijemeDolazaka, string vrijemeOdlazaka,bool postojeca)
         {
             this.BrojLinije = brojLinije;
             this.Destinacija = destinacija;
-            this.Aviokompanija = aviokompanija;
-            this.Avion = avion;
+            this.idAviokompanije = idAviokompanije;
+            this.idAviona = idAviona;
             this.ProsjecnoTrajanje = prosjecnoTrajanje;
             this.Cijena = cijena;
             this.DaniDolazaka = daniDolazaka;
             this.DaniOdlazaka = daniOdlazaka;
             this.VrijemeDolazaka = vrijemeDolazaka;
             this.VrijemeOdlazaka = vrijemeOdlazaka;
+            this.postojeca = postojeca;
         }
 
         public string BrojLinije { get => brojLinije; set => brojLinije = value; }
         public string Destinacija { get => destinacija; set => destinacija = value; }
-        public Aviokompanija Aviokompanija { get => aviokompanija; set => aviokompanija = value; }
-        public Avion Avion { get => avion; set => avion = value; }
+        public string IdAviokompanije { get => idAviokompanije; set => idAviokompanije = value; }
+        public string IdAviona { get => idAviona; set => idAviona = value; }
         public double ProsjecnoTrajanje { get => prosjecnoTrajanje; set => prosjecnoTrajanje = value; }
         public double Cijena { get => cijena; set => cijena = value; }
-        public List<Dan> DaniDolazaka { get => daniDolazaka; set => daniDolazaka = value; }
-        public List<Dan> DaniOdlazaka { get => daniOdlazaka; set => daniOdlazaka = value; }
-        public DateTime VrijemeDolazaka { get => vrijemeDolazaka; set => vrijemeDolazaka = value; }
-        public DateTime VrijemeOdlazaka { get => vrijemeOdlazaka; set => vrijemeOdlazaka = value; }
+        public string VrijemeDolazaka { get => vrijemeDolazaka; set => vrijemeDolazaka = value; }
+        public string VrijemeOdlazaka { get => vrijemeOdlazaka; set => vrijemeOdlazaka = value; }
+        //aplikacija pristupa preko ovoga
+        public List<Dan> DaniDolazaka { 
+            set {
+                daniDolazaka = value;
+                if (daniDolazaka != null)
+                {
+                    StringBuilder sb = new StringBuilder();
+                    foreach (Dan x in daniDolazaka)
+                    {
+                        sb.Append(x.ToString());
+                        sb.Append(',');
+                    }
+                    daniDolazakaString = sb.ToString().TrimEnd(',');
+                }
+                else daniDolazakaString = null;
+            }
+        }
+        //umjesto getera(obrisali zbog tabela) za liste ispod napravit f-je da pristupa
+        public List<Dan> DaniOdlazaka
+        {
+            set
+            {
+                daniOdlazaka = value;
+                if (daniOdlazaka != null)
+                {
+                    StringBuilder sb = new StringBuilder();
+                    foreach (Dan x in daniOdlazaka)
+                    {
+                        sb.Append(x.ToString());
+                        sb.Append(',');
+                    }
+                    daniOdlazakaString = sb.ToString().TrimEnd(',');
+                }
+                else daniOdlazakaString = null;
+            }
+        }
+        //tabela pristupa preko ovoga
+        public string DaniDolazakaString { get => daniDolazakaString;
+            set {
+                daniDolazakaString = value;
+                if (!String.IsNullOrEmpty(daniDolazakaString))
+                {
+                    daniDolazaka = new List<Dan>();
+                    string[] niz = daniDolazakaString.Split(',');
+                    for(int i = 0; i < niz.Length; i++)
+                    {
+                        Dan dan;
+                        bool uspio=Enum.TryParse(niz[i], out dan);
+                        if(uspio) daniDolazaka.Add(dan);
+                    }
+                }
+                else if (daniDolazakaString == String.Empty) daniDolazaka = new List<Dan>();
+                else daniDolazaka = null;
+            }
+        }
+        public string DaniOdlazakaString
+        {
+            get => daniOdlazakaString;
+            set
+            {
+                daniOdlazakaString = value;
+                if (!String.IsNullOrEmpty(daniOdlazakaString))
+                {
+                    daniOdlazaka = new List<Dan>();
+                    string[] niz = daniOdlazakaString.Split(',');
+                    for (int i = 0; i < niz.Length; i++)
+                    {
+                        Dan dan;
+                        bool uspio = Enum.TryParse(niz[i], out dan);
+                        if (uspio) daniOdlazaka.Add(dan);
+                    }
+                }
+                else if (daniOdlazakaString == String.Empty) daniOdlazaka = new List<Dan>();
+                else daniOdlazaka = null;
+            }
+        }
+
+        public bool Postojeca { get => postojeca; set => postojeca = value; }
+        public string Id { get => id; set => id = value; }
     }
 }

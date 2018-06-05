@@ -27,6 +27,7 @@ namespace Aerodrom.ViewModel
         //Tabele iz baze
         IMobileServiceTable<Uposlenik> tableUposlenici = App.MobileService.GetTable<Uposlenik>();
         IMobileServiceTable<Aviokompanija> tableAviokompanije = App.MobileService.GetTable<Aviokompanija>();
+        IMobileServiceTable<Linija> tableLinije = App.MobileService.GetTable<Linija>();
         //Pocetna
 
         string nazivAerodroma = Globalna.NazivAerodroma;
@@ -68,6 +69,7 @@ namespace Aerodrom.ViewModel
         //Upravljanje linijama (moze se dodati neka iz odobrenih zahtjeva od uprave, ili obrisati postojeca)
 
         ObservableCollection<string> postojeceLinije = new ObservableCollection<string>();
+        List<Linija> ucitanePostojeceLinije = new List<Linija>();
         ObservableCollection<string> odobreneLinije = new ObservableCollection<string>();
         ICommand prikaziLinije;
         ICommand dodajLiniju;
@@ -409,9 +411,29 @@ namespace Aerodrom.ViewModel
 
         public void PrikazLinija(object Parametar)
         {
+            /*za test
+            List<Dan> d = new List<Dan>();d.Add(Dan.Cetvrtak);
+            Linija l = new Linija("545", "bec", "944cc9df-ec77-4bda-9ebe-5c8b188fb860", "5", 1, 1000, d, d, "14:00", "15:00", true);
+            try { tableLinije.InsertAsync(l); MessageDialog msgDialog = new MessageDialog("Linija je uspjesno unesena!");
+                msgDialog.ShowAsync();
+            }
+             catch (Exception ex)
+            {
+                MessageDialog msgDialogError = new MessageDialog("Error : " + ex.ToString());
+                msgDialogError.ShowAsync();
+            }*/
             //Treba ucitati sve dostupne stringove linije odabrane aviokompanije iz baze
             //Naziv aviokompanije je u varijabli OdabranaAvikompanijaLinije
+            string id=null;
+            foreach(Aviokompanija x in ucitaneAviokompanije)
+            {
+                if (x.Naziv == odabranaAviokompanijaLinije)
+                {
+                    id = x.Id;break;
+                }
+            }
             //U ObservalCollection PostojeceLinije ucitavaju se linije koje aviokompanija vec ima
+            if (id != null) PopuniLinijamaIzBaze(id);
             // U OservalCollection odobreneLinije su one koje je uprava odobrila (odobren zahtjev za novu liniju) koju onda admin moze dodat
 
         }
@@ -518,7 +540,16 @@ namespace Aerodrom.ViewModel
                 }
             }
         }
-
+        //Za popunjavanje linijam iz baze
+        private async void PopuniLinijamaIzBaze(string idAviokompanije)
+        {
+            ucitanePostojeceLinije = await tableLinije.Where((Linija l) => l.IdAviokompanije == idAviokompanije).ToListAsync();
+            for (int i = 0; i < ucitanePostojeceLinije.Count; i++)
+            {
+                string x = ucitanePostojeceLinije[i].Destinacija + ", br linije: " + ucitanePostojeceLinije[i].BrojLinije;
+                if (!postojeceLinije.Contains(x)) postojeceLinije.Add(x);
+            }
+        }
 
     }
 
