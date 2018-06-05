@@ -8,6 +8,7 @@ namespace Aerodrom.Model
 {
     public class Avion
     {
+        private string id;
         private string naziv;
         private int brojMjesta;
         private double dozvoljenaPrtljagaPoOsobi;
