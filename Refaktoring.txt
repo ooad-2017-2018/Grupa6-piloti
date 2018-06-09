@@ -1,0 +1,14 @@
+Refaktoring
+
+1.Hide routines that are not intended to be used outside the class
+-U AdministratorViewModel sve metode za upravljanje uposlenicima,aviokompanijama i vecina za upravljanje linijama ne koriste se izvan klase, pa smo ih ucinili privatnim.
+
+2.Rename a variable with a clearer or more informative name i 3.A routine has a poor name-Rename method
+-U AdministratorViewModel drze se podaci o mailu i telefonu i uposlenika i aviokompanije, prema tome mijenjamo imena atributima string telefon, string email u string telefonUposlenika i string emailUposlenika, respektivno.Radi konzistentnosti analogno radimo i za ostala polja koja se odnose na uposlenike.
+-Analogno cinimo i za osobine za odgovarajuca polja, tj mijenjamo public string Ime { get => imeUposlenika; set => imeUposlenika = value; } u public string Ime { get => imeUposlenika; set => imeUposlenika = value; }...
+
+4. Extract a routine i 5. Combine similar routines by parameterizing them
+-U klasi Linija seteri public List<Dan> DaniDolazaka i public List<Dan> DaniOdlazaka vrse gotovo identicne zadatke, te vrsimo izdvajanje i kombinovanje koda u metodu private void setListaDana(List<Dan> lista,int izbor), koju pozivamo is setera gdje predajemo value i izbor(u klasi su definisani private static int IzborDaniDolazaka = 0 i private static int IzborDaniOdlazaka = 1).Analogno vrijedi i za setere public string DaniDolazakaString, public string DaniOdlazakaString pri cemu kreiramo metodu private void setStringDana(string dani,int izbor).
+
+5. Pass a whole object rather than specific fields
+-U konstruktoru klase Linija umjesto citavog objekta(odnosono reference objekta) tipa klase Aviokompanija, predajemo polje idAviokompanije, buduci da je samo to polje potrebno za dobivanje odgovorajucih informacija iz baze.
