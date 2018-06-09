@@ -39,13 +39,13 @@
                     <TextBlock HorizontalAlignment="Left" Margin="716,350,0,0" TextWrapping="Wrap" Text="Telefon" VerticalAlignment="Top"/>
                     <TextBlock HorizontalAlignment="Left" Margin="716,408,0,0" TextWrapping="Wrap" Text="Pozicija" VerticalAlignment="Top"/>
                     <TextBlock HorizontalAlignment="Left" Margin="716,454,0,0" TextWrapping="Wrap" Text="Plata" VerticalAlignment="Top"/>
-                    <TextBox HorizontalAlignment="Left" Margin="856,135,0,0" TextWrapping="Wrap" Text="{Binding Path=Prezime, Mode=TwoWay}" VerticalAlignment="Top" Width="296"/>
-                    <TextBox HorizontalAlignment="Left" Margin="856,291,0,0" TextWrapping="Wrap" Text="{Binding Path=Email, Mode=TwoWay}" VerticalAlignment="Top" Width="296"/>
-                    <TextBox HorizontalAlignment="Left" Margin="856,442,0,0" TextWrapping="Wrap" Text="{Binding Path=Plata, Mode=TwoWay}" VerticalAlignment="Top" Width="296"/>
-                    <TextBox HorizontalAlignment="Left" Margin="856,338,0,0" TextWrapping="Wrap" Text="{Binding Path=Telefon, Mode=TwoWay}" VerticalAlignment="Top" Width="296"/>
-                    <TextBox HorizontalAlignment="Left" Margin="856,86,0,0" TextWrapping="Wrap" Text="{Binding Path=Ime, Mode=TwoWay}" VerticalAlignment="Top" Width="296"/>
+                    <TextBox HorizontalAlignment="Left" Margin="856,135,0,0" TextWrapping="Wrap" Text="{Binding Path=PrezimeUposlenika, Mode=TwoWay}" VerticalAlignment="Top" Width="296"/>
+                    <TextBox HorizontalAlignment="Left" Margin="856,291,0,0" TextWrapping="Wrap" Text="{Binding Path=EmailUposlenika, Mode=TwoWay}" VerticalAlignment="Top" Width="296"/>
+                    <TextBox HorizontalAlignment="Left" Margin="856,442,0,0" TextWrapping="Wrap" Text="{Binding Path=PlataUposlenika, Mode=TwoWay}" VerticalAlignment="Top" Width="296"/>
+                    <TextBox HorizontalAlignment="Left" Margin="856,338,0,0" TextWrapping="Wrap" Text="{Binding Path=TelefonUposlenika, Mode=TwoWay}" VerticalAlignment="Top" Width="296"/>
+                    <TextBox HorizontalAlignment="Left" Margin="856,86,0,0" TextWrapping="Wrap" Text="{Binding Path=ImeUposlenika, Mode=TwoWay}" VerticalAlignment="Top" Width="296"/>
                     <ComboBox HorizontalAlignment="Left" Margin="856,396,0,0" VerticalAlignment="Top" Width="296" ItemsSource="{Binding Path=Pozicije}" SelectedValue="{Binding Path=SelektovanaPozicija, Mode=TwoWay}"/>
-                    <DatePicker HorizontalAlignment="Left" Margin="856,188,0,0" VerticalAlignment="Top" Width="227" Date="{Binding Path=DatumRodjenja, Mode=TwoWay}"/>
+                    <DatePicker HorizontalAlignment="Left" Margin="856,188,0,0" VerticalAlignment="Top" Width="227" Date="{Binding Path=DatumRodjenjaUposlenika, Mode=TwoWay}"/>
                     <Button Content="Dodaj / Izmjeni" HorizontalAlignment="Left" Margin="866,579,0,0" VerticalAlignment="Top" Width="153" Command="{Binding Path=DodajIzmjeniUpslenika}"/>
                     <Button Content="Obriši" HorizontalAlignment="Left" Margin="716,579,0,0" VerticalAlignment="Top" Width="115" Command="{Binding Path=ObrisiUposlenika}"/>
                     <Button Content="Poništi" HorizontalAlignment="Left" Margin="1052,579,0,0" VerticalAlignment="Top" Width="100" Command="{Binding Path=PonistiUposlenika}"/>

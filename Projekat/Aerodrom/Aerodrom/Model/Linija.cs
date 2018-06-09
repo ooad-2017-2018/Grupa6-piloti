@@ -1,14 +1,14 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
 using System.Text;
-using System.Threading.Tasks;
 
 namespace Aerodrom.Model
 {
     public enum Dan{Ponedeljak, Utorak, Srijeda, Cetvrtak, Petak, Subota, Nedelja};
     public class Linija
     {
+        private static int IzborDaniDolazaka = 0;
+        private static int IzborDaniOdlazaka = 1;
         private string id;
         private string brojLinije;
         private string destinacija;
@@ -48,10 +48,14 @@ namespace Aerodrom.Model
         public double Cijena { get => cijena; set => cijena = value; }
         public string VrijemeDolazaka { get => vrijemeDolazaka; set => vrijemeDolazaka = value; }
         public string VrijemeOdlazaka { get => vrijemeOdlazaka; set => vrijemeOdlazaka = value; }
-        //aplikacija pristupa preko ovoga
-        public List<Dan> DaniDolazaka { 
-            set {
-                daniDolazaka = value;
+
+
+
+        private void setListaDana(List<Dan> lista,int izbor)
+        {
+            if (izbor == IzborDaniDolazaka)
+            {
+                daniDolazaka = lista;
                 if (daniDolazaka != null)
                 {
                     StringBuilder sb = new StringBuilder();
@@ -64,13 +68,9 @@ namespace Aerodrom.Model
                 }
                 else daniDolazakaString = null;
             }
-        }
-        //umjesto getera(obrisali zbog tabela) za liste ispod napravit f-je da pristupa
-        public List<Dan> DaniOdlazaka
-        {
-            set
+            else if (izbor == IzborDaniOdlazaka)
             {
-                daniOdlazaka = value;
+                daniOdlazaka = lista;
                 if (daniOdlazaka != null)
                 {
                     StringBuilder sb = new StringBuilder();
@@ -84,31 +84,28 @@ namespace Aerodrom.Model
                 else daniOdlazakaString = null;
             }
         }
-        //tabela pristupa preko ovoga
-        public string DaniDolazakaString { get => daniDolazakaString;
-            set {
-                daniDolazakaString = value;
+        private void setStringDana(string dani,int izbor)
+        {
+            if (izbor == IzborDaniDolazaka)
+            {
+                daniDolazakaString = dani;
                 if (!String.IsNullOrEmpty(daniDolazakaString))
                 {
                     daniDolazaka = new List<Dan>();
                     string[] niz = daniDolazakaString.Split(',');
-                    for(int i = 0; i < niz.Length; i++)
+                    for (int i = 0; i < niz.Length; i++)
                     {
                         Dan dan;
-                        bool uspio=Enum.TryParse(niz[i], out dan);
-                        if(uspio) daniDolazaka.Add(dan);
+                        bool uspio = Enum.TryParse(niz[i], out dan);
+                        if (uspio) daniDolazaka.Add(dan);
                     }
                 }
                 else if (daniDolazakaString == String.Empty) daniDolazaka = new List<Dan>();
                 else daniDolazaka = null;
             }
-        }
-        public string DaniOdlazakaString
-        {
-            get => daniOdlazakaString;
-            set
+            else if (izbor == IzborDaniOdlazaka)
             {
-                daniOdlazakaString = value;
+                daniOdlazakaString = dani;
                 if (!String.IsNullOrEmpty(daniOdlazakaString))
                 {
                     daniOdlazaka = new List<Dan>();
@@ -122,6 +119,35 @@ namespace Aerodrom.Model
                 }
                 else if (daniOdlazakaString == String.Empty) daniOdlazaka = new List<Dan>();
                 else daniOdlazaka = null;
+            }
+        }
+        //aplikacija pristupa preko ovoga
+        public List<Dan> DaniDolazaka { 
+            set
+            {
+                setListaDana(value, IzborDaniDolazaka);
+            }
+        }
+        //umjesto getera(obrisali zbog tabela) za liste ispod napravit f-je da pristupa
+        public List<Dan> DaniOdlazaka
+        {
+            set
+            {
+                setListaDana(value, IzborDaniOdlazaka);
+            }
+        }
+        //tabela pristupa preko ovoga
+        public string DaniDolazakaString { get => daniDolazakaString;
+            set {
+                setStringDana(value, IzborDaniDolazaka);
+            }
+        }
+        public string DaniOdlazakaString
+        {
+            get => daniOdlazakaString;
+            set
+            {
+                setStringDana(value, IzborDaniOdlazaka);
             }
         }
 

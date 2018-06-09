@@ -1,22 +1,13 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using Aerodrom.Helper;
 using Aerodrom.Model;
-using Aerodrom.ViewModel;
-using System.Windows.Input;
-using System.ComponentModel;
-using System.Collections.ObjectModel;
-using System.Windows;
-using Windows.UI.Popups;
 using Microsoft.WindowsAzure.MobileServices;
-using System.Data.SqlClient;
-
-
-
-using Aerodrom.Helper;
+using System;
+using System.Collections.Generic;
+using System.Collections.ObjectModel;
+using System.ComponentModel;
 using System.Runtime.CompilerServices;
+using System.Windows.Input;
+using Windows.UI.Popups;
 
 namespace Aerodrom.ViewModel
 {
@@ -38,15 +29,15 @@ namespace Aerodrom.ViewModel
 
         //Upravljanje uposlenicima
 
-        string ime;
-        string prezime;
-        DateTime datumRodjenja;
-        string email;
-        string telefon;
+        string imeUposlenika;
+        string prezimeUposlenika;
+        DateTime datumRodjenjaUposlenika;
+        string emailUposlenika;
+        string telefonUposlenika;
         ObservableCollection<string> pozicije = Globalna.dohvatiPozicije();
         ObservableCollection<string> uposlenici = new ObservableCollection<string>();
         List<Uposlenik> ucitaniUposlenici = new List<Uposlenik>();
-        string plata;
+        string plataUposlenika;
         string odabraniUposlenik = null;
         Pozicija selektovanaPozicija;
         ICommand obrisiUposlenika;
@@ -89,13 +80,13 @@ namespace Aerodrom.ViewModel
         public ObservableCollection<String> Piste { get => piste; set => piste = value; }
         public ObservableCollection<String> Avioni { get => avioni; set => avioni = value; }
         public ICommand SpasiPromjene { get => spasiPromjene; set => spasiPromjene = value; }
-        public string Ime { get => ime; set => ime = value; }
-        public string Prezime { get => prezime; set => prezime = value; }
-        public DateTime DatumRodjenja { get => datumRodjenja; set => datumRodjenja = value; }
-        public string Email { get => email; set => email = value; }
-        public string Telefon { get => telefon; set => telefon = value; }
+        public string ImeUposlenika { get => imeUposlenika; set => imeUposlenika = value; }
+        public string PrezimeUposlenika { get => prezimeUposlenika; set => prezimeUposlenika = value; }
+        public DateTime DatumRodjenjaUposlenika { get => datumRodjenjaUposlenika; set => datumRodjenjaUposlenika = value; }
+        public string EmailUposlenika { get => emailUposlenika; set => emailUposlenika = value; }
+        public string TelefonUposlenika { get => telefonUposlenika; set => telefonUposlenika = value; }
         public ObservableCollection<string> Pozicije { get => pozicije; set => pozicije = value; }
-        public string Plata { get => plata; set => plata = value; }
+        public string PlataUposlenika { get => plataUposlenika; set => plataUposlenika = value; }
         public ICommand ObrisiUposlenika { get => obrisiUposlenika; set => obrisiUposlenika = value; }
         public ICommand DodajIzmjeniUpslenika { get => dodajIzmjeniUpslenika; set => dodajIzmjeniUpslenika = value; }
         public ICommand PonistiUposlenika { get => ponistiUposlenika; set => ponistiUposlenika = value; }
@@ -172,7 +163,7 @@ namespace Aerodrom.ViewModel
 
         // ///////// METODE ZA UPRAVLJANJE UPOSLENICIMA ////////////
 
-        public void BrisanjeUposlenika(object Parametar)
+        private void BrisanjeUposlenika(object Parametar)
         {
             //Implementirati brisanje odabranog uposlenika iz baze
             //Naziv odabranog uposlenika je u varijabli OdabraniUposlenik
@@ -202,7 +193,7 @@ namespace Aerodrom.ViewModel
             }
         }
 
-        public void DodavanjeIzmjenaUposlenika(object Parametar)
+        private void DodavanjeIzmjenaUposlenika(object Parametar)
         {
             if (odabraniUposlenik == null)
             {
@@ -210,8 +201,8 @@ namespace Aerodrom.ViewModel
                 try
                 {
                     Double plata;
-                    Double.TryParse(Plata, out plata);
-                    Uposlenik uposlenik = new Uposlenik(ime, prezime, DatumRodjenja.ToString(), telefon, email, plata,selektovanaPozicija);
+                    Double.TryParse(PlataUposlenika, out plata);
+                    Uposlenik uposlenik = new Uposlenik(imeUposlenika, prezimeUposlenika, DatumRodjenjaUposlenika.ToString(), telefonUposlenika, emailUposlenika, plata,selektovanaPozicija);
                     //datum rodenja iz nekog razloga ne valja
                     tableUposlenici.InsertAsync(uposlenik);
                     PopuniUposlenicimaIzBaze();
@@ -237,21 +228,21 @@ namespace Aerodrom.ViewModel
                 }
                 try
                 {
-                    if(!String.IsNullOrEmpty(ime)) x.Ime = ime;
-                    if (!String.IsNullOrEmpty(prezime)) x.Prezime = prezime;
-                    x.DatumRodjenja = DatumRodjenja.ToString();//datum rodenja za test, sto ne radi...
-                    if (!String.IsNullOrEmpty(telefon)) x.Telefon = telefon;
-                    if (!String.IsNullOrEmpty(email)) x.Email = email;
-                    if (!String.IsNullOrEmpty(Plata)) {
+                    if (!String.IsNullOrEmpty(imeUposlenika)) x.Ime = imeUposlenika;
+                    if (!String.IsNullOrEmpty(prezimeUposlenika)) x.Prezime = prezimeUposlenika;
+                    x.DatumRodjenja = DatumRodjenjaUposlenika.ToString();//datum rodenja za test, sto ne radi...
+                    if (!String.IsNullOrEmpty(telefonUposlenika)) x.Telefon = telefonUposlenika;
+                    if (!String.IsNullOrEmpty(emailUposlenika)) x.Email = emailUposlenika;
+                    if (!String.IsNullOrEmpty(PlataUposlenika)) {
                         Double plata;
-                        Double.TryParse(Plata, out plata);
+                        Double.TryParse(PlataUposlenika, out plata);
                         x.Plata = plata;
                     }
                     x.Pozicija = selektovanaPozicija;
                     tableUposlenici.UpdateAsync(x);
-                    if (!String.IsNullOrEmpty(ime))
+                    if (!String.IsNullOrEmpty(imeUposlenika))
                     {
-                        uposlenici.Remove(odabraniUposlenik); uposlenici.Add(ime);
+                        uposlenici.Remove(odabraniUposlenik); uposlenici.Add(imeUposlenika);
                     }
                     MessageDialog msgDialog = new MessageDialog("Uposlenik je uspjesno izmijenjen!");
                     msgDialog.ShowAsync();
@@ -264,26 +255,26 @@ namespace Aerodrom.ViewModel
             }
         }
 
-        public void PonistiPoljaUposlenika(object Parametar)
+        private void PonistiPoljaUposlenika(object Parametar)
         {
 
 
-            Ime = String.Empty;
+            ImeUposlenika = String.Empty;
             OnNotifyPropertyChanged("Ime");
-            Prezime = String.Empty;
+            PrezimeUposlenika = String.Empty;
             OnNotifyPropertyChanged("Prezime");
-            Email = String.Empty;
+            EmailUposlenika = String.Empty;
             OnNotifyPropertyChanged("Email");
-            Telefon = String.Empty;
+            TelefonUposlenika = String.Empty;
             OnNotifyPropertyChanged("Telefon");
-            Plata = String.Empty;
+            PlataUposlenika = String.Empty;
             OnNotifyPropertyChanged("Plata");
         }
 
-        public bool ProvjeraUposlenika(object Parametar)
+        private bool ProvjeraUposlenika(object Parametar)
         {
 
-            if (Ime == "" || Prezime == "" || Email == "" || Telefon == "" || Plata == "")
+            if (ImeUposlenika == "" || PrezimeUposlenika == "" || EmailUposlenika == "" || TelefonUposlenika == "" || PlataUposlenika == "")
             {
                 var poruka = new MessageDialog("Neispravni podaci");
                 poruka.ShowAsync();
@@ -305,10 +296,10 @@ namespace Aerodrom.ViewModel
             return true;
         }
 
-                     // ////////////// METODE ZA UPRAVLJANJE AVIKOMPANIJAMA ///////////////
+        // ////////////// METODE ZA UPRAVLJANJE AVIKOMPANIJAMA ///////////////
 
 
-        public void BrisanjeAviokompanije(object Parametar)
+        private void BrisanjeAviokompanije(object Parametar)
         {
             if (odabranaAviokompanija != null)
             {
@@ -336,7 +327,7 @@ namespace Aerodrom.ViewModel
             }
         }
 
-        public void DodavanjeIzmjenaAviokompanije(object Parametar)
+        private void DodavanjeIzmjenaAviokompanije(object Parametar)
         {
             //Treba implementirati dodavanja nove avikompanije u bazu
             if (odabranaAviokompanija == null)
@@ -388,7 +379,7 @@ namespace Aerodrom.ViewModel
 
         }
 
-        public void PonistiPoljaAviokompanije(object Parametar)
+        private void PonistiPoljaAviokompanije(object Parametar)
         {
             NazivAviokompanije = String.Empty;
             OnNotifyPropertyChanged("NazivAviokompanije");
@@ -401,7 +392,7 @@ namespace Aerodrom.ViewModel
               
         }
 
-        public bool ProvjeraAviokompanije(object Parametar)
+        private bool ProvjeraAviokompanije(object Parametar)
         {
             //Ako ima nekih restrikcija treba ih dodat za polja
             return true;
@@ -409,7 +400,7 @@ namespace Aerodrom.ViewModel
 
         // //////////////////// METODE ZA UPRAVLJANJE LINIJAMA ///////////////////////
 
-        public void PrikazLinija(object Parametar)
+        private void PrikazLinija(object Parametar)
         {
             /*za test
             List<Dan> d = new List<Dan>();d.Add(Dan.Cetvrtak);
@@ -437,18 +428,18 @@ namespace Aerodrom.ViewModel
             // U OservalCollection odobreneLinije su one koje je uprava odobrila (odobren zahtjev za novu liniju) koju onda admin moze dodat
 
         }
-        public void DodavanjeLinije(object Parametar)
+        private void DodavanjeLinije(object Parametar)
         {
            
             //Treba u bazu dodati liniju koja se odabrala, njen ID il sta se vec ucitalo je u varijabli odabranaLinijaZaDodat
         }
-        public void BrisanjeLinije(object Parametar)
+        private void BrisanjeLinije(object Parametar)
         {
             //Treba iz baze obrisati liniju koja se odabrala, njen ID il sta se vec ucitalo je u varijabli odabranaLinijaZaObrisat
         }
 
         // //////// UPRAVLJANJE POCETNOM ////////////
-        public bool ProvjeraInfo(object Parametar)
+        private bool ProvjeraInfo(object Parametar)
         {
 
             if (nazivAerodroma == String.Empty || NazivAerodroma == "" || BrojGateova == String.Empty || BrojGateova == "")
@@ -467,7 +458,7 @@ namespace Aerodrom.ViewModel
             return true;
         }
 
-        public void IzmjenaInfo(object Parametar)
+        private void IzmjenaInfo(object Parametar)
         {
             //Promijeniti naziv i broj gateova
 
@@ -479,12 +470,12 @@ namespace Aerodrom.ViewModel
 
         }
 
-        public bool Provjera(object Parametar)
+        private bool Provjera(object Parametar)
         {
             return true;
         }
 
-        public void Odjava(object Parametar)
+        private void Odjava(object Parametar)
         {
             //Treba odjaviti user-a iz glavne
             NavigationService.Navigate(typeof(MainPage), new LoginViewModel(this));
@@ -497,7 +488,7 @@ namespace Aerodrom.ViewModel
             PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(memberName));
         }
 
-        public static bool IsDigitsOnly(string str)
+        private static bool IsDigitsOnly(string str)
                {
                         foreach (char c in str)
                         {
@@ -508,7 +499,7 @@ namespace Aerodrom.ViewModel
                         return true;
                }
 
-        public static bool containsAt(string s) {
+        private static bool containsAt(string s) {
            
             foreach(char c in s)
             {
@@ -550,7 +541,7 @@ namespace Aerodrom.ViewModel
                 if (!postojeceLinije.Contains(x)) postojeceLinije.Add(x);
             }
         }
-
+        
     }
 
 
